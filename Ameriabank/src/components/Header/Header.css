@@ -21,13 +21,100 @@
   letter-spacing: 0.5px;
   transition: color 0.2s;
 }
-
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
 .top-nav__link:hover,
 .top-nav__link.active {
-  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
 font-size: 14px;
-font-weight: 600;
 letter-spacing: 1px;
 color: #72bf44;
-  /* color: #6cb33f; Ameriabank-ի կանաչը */
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+  gap: 24px;
+  padding: 20px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #222;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-nav__item:hover {
+  color: #6cb33f;
+}
+
+.main-nav__icon-btn,
+.main-nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #222;
+  font-size: 14px;
+}
+
+.main-nav__lang {
+  color: #6cb33f;
+  font-weight: 700;
+}
+.lang {
+  position: relative;
+}
+
+.main-nav__lang svg {
+  transition: transform 0.2s;
+}
+
+.main-nav__lang svg.rotated {
+  transform: rotate(180deg);
+}
+
+.lang__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 80px;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.lang__option {
+  width: 100%;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  color: #222;
+}
+
+.lang__option:hover,
+.lang__option.active {
+  color: #6cb33f;
+  background: #f5f9f1;
 }
