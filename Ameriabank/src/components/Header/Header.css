@@ -1,0 +1,33 @@
+.top-nav {
+  background: #fff;
+  padding: 0 40px;
+}
+
+.top-nav__list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.top-nav__link {
+  text-decoration: none;
+    font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.top-nav__link:hover,
+.top-nav__link.active {
+  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 1px;
+color: #72bf44;
+  /* color: #6cb33f; Ameriabank-ի կանաչը */
+}
