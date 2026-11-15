@@ -1,4 +1,4 @@
-import { CreditCard, ArrowLeftRight, BadgePercent, Smartphone } from "lucide-react";
+import { CreditCard, ArrowLeftRight, BadgePercent, Smartphone, PiggyBank } from "lucide-react";
 import LinkCard from "./LinkCard";
 import "./UsefulLinks.css";
 
@@ -7,6 +7,7 @@ const links = [
   { title: "Փոխանցումներ", icon: ArrowLeftRight, href: "#" },
   { title: "Օնլայն վարկեր", icon: BadgePercent, href: "#" },
   { title: "Հեռավար բանկինգ", icon: Smartphone, href: "#" },
+  { title: "Խնայողություններ", icon: PiggyBank, href: "#" },
 ];
 
 export default function UsefulLinks() {
