@@ -4,6 +4,7 @@ import Cards from "./components/Cards/Cards";
 import UsefulLinks from "./components/UsefulLinks/UsefulLinks";
 import FeedbackButton from "./components/FeedbackButton/FeedbackButton";
 import ChatButton from "./components/ChatButton/ChatButton";
+import PromoSlider from "./components/PromoSlider/PromoSlider";
 import "./App.css";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <UsefulLinks />
       <FeedbackButton />
       <ChatButton />
+      <PromoSlider />
     </>
   );
 }
