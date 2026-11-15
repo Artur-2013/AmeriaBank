@@ -5,9 +5,10 @@ import UsefulLinks from "./components/UsefulLinks/UsefulLinks";
 import PromoSlider from "./components/PromoSlider/PromoSlider";
 import MyServices from "./components/MyServices/MyServices";
 import Offers from "./components/Offers/Offers";
+import Currency from "./components/Currency/Currency";
+import News from "./components/News/News";
 import FeedbackButton from "./components/FeedbackButton/FeedbackButton";
 import ChatButton from "./components/ChatButton/ChatButton";
-import Currency from "./components/Currency/Currency";
 import "./App.css";
 
 export default function App() {
@@ -20,9 +21,10 @@ export default function App() {
       <PromoSlider />
       <MyServices />
       <Offers />
+      <Currency />
+      <News />
       <FeedbackButton />
       <ChatButton />
-      <Currency />
     </>
   );
 }
