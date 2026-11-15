@@ -3,18 +3,18 @@ import "./Hero.css";
 
 const slides = [
   {
-    title: "Անվճար քարտ՝ առանց բանկ գալու",
+    title: "AMP",
     text: "Դիմիր օնլայն, ստացիր անվճար Visa Classic կամ MasterCard Standard քարտ, բանկային հաշիվ և MyAmeria օնլայն/մոբայլ բանկինգ։",
     image: "https://ameriabank.am/Portals/0/Images/mypoints/ameria-mypoint-arm.png", // փոխիր քո url-ով
   },
   {
-    title: "Երկրորդ սլայդի վերնագիր",
-    text: "Երկրորդ սլայդի նկարագրությունը։",
+    title: "MyAmeria Star",
+    text: "Ստեղծիր քո աստղը",
     image: "https://ameriabank.am/Portals/0/Images/myameria-kids/mystar-girls.png",
   },
   {
-    title: "Երրորդ սլայդի վերնագիր",
-    text: "Երրորդ սլայդի նկարագրությունը։",
+    title: "Անվճար քարտ՝ առանց բանկ գալու",
+    text: "Դիմիր օնլայն, ստացիր անվճար Visa Classic կամ MasterCard Standard քարտ, բանկային հաշիվ և MyAmeria օնլայն/մոբայլ բանկինգ։",
     image: "https://ameriabank.am/Portals/0/Images/New-home/card-banner.png",
   },
 ];
