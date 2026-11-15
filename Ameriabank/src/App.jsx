@@ -9,6 +9,7 @@ import Currency from "./components/Currency/Currency";
 import News from "./components/News/News";
 import FeedbackButton from "./components/FeedbackButton/FeedbackButton";
 import ChatButton from "./components/ChatButton/ChatButton";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <News />
       <FeedbackButton />
       <ChatButton />
+      <Footer />
     </>
   );
 }
