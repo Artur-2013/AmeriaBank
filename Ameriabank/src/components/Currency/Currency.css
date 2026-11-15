@@ -1,0 +1,13 @@
+.currency {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 40px;
+  padding: 40px 64px 60px;
+  background: #fff;
+}
+
+@media (max-width: 1000px) {
+  .currency {
+    grid-template-columns: 1fr;
+  }
+}
