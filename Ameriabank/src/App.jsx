@@ -7,6 +7,7 @@ import MyServices from "./components/MyServices/MyServices";
 import Offers from "./components/Offers/Offers";
 import FeedbackButton from "./components/FeedbackButton/FeedbackButton";
 import ChatButton from "./components/ChatButton/ChatButton";
+import Currency from "./components/Currency/Currency";
 import "./App.css";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Offers />
       <FeedbackButton />
       <ChatButton />
+      <Currency />
     </>
   );
 }
