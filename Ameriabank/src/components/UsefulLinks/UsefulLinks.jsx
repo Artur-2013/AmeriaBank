@@ -1,9 +1,10 @@
-import { CreditCard } from "lucide-react";
+import { CreditCard, ArrowLeftRight } from "lucide-react";
 import LinkCard from "./LinkCard";
 import "./UsefulLinks.css";
 
 const links = [
   { title: "Քարտեր", icon: CreditCard, href: "#" },
+  { title: "Փոխանցումներ", icon: ArrowLeftRight, href: "#" },
 ];
 
 export default function UsefulLinks() {
