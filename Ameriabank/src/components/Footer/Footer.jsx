@@ -1,4 +1,21 @@
 import "./Footer.css";
+import FooterColumn from "./FooterColumn";
+
+const mainLinks = [
+  "Բանկի մասին",
+  "Բանկի հիմնական ձեռքբերումները",
+  "Հաշվետվություններ",
+  "Էական փաստեր",
+  "Էթիկայի կանոնները",
+  "Բանկի ղեկավարները",
+  "Կորպորատիվ կառավարում",
+  "Նշանակալից մասնակցություն ունեցող անձինք",
+  "Մասնաճյուղեր և բանկոմատներ",
+  "Բաժետերեր և ներդրողներ",
+  "Բանկի կառուցվածքը",
+  "Ամերիա Օգնական",
+  "Հետադարձ կապ",
+];
 
 export default function Footer() {
   return (
@@ -11,7 +28,7 @@ export default function Footer() {
       </p>
 
       <div className="footer__grid">
-        {/* սյունակները կավելացվեն հաջորդ քայլերում */}
+            <FooterColumn title="Հիմնական" links={mainLinks} />
       </div>
     </footer>
   );
