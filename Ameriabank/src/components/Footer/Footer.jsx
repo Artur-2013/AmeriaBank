@@ -34,7 +34,13 @@ const infoLinks = [
   "Ֆինանսական անվտանգության խորհուրդներ",
   "Stop գործիքներ",
 ];
-
+const careerLinks = [
+  "Ամերիա թիմ",
+  "Ինչու մեզ հետ",
+  "Երիտասարդներին",
+  "Ամերիա սերունդ",
+  "Աշխատատեղեր",
+];
 export default function Footer() {
   return (
     <footer className="footer">
@@ -48,6 +54,7 @@ export default function Footer() {
       <div className="footer__grid">
             <FooterColumn title="Հիմնական" links={mainLinks} />
             <FooterColumn title="Այլ տեղեկատվություն" links={infoLinks} />
+            <FooterColumn title="Աշխատանք" links={careerLinks} />
       </div>
     </footer>
   );
