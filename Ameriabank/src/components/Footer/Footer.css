@@ -46,6 +46,38 @@
   padding: 0;
   list-style: none;
 }
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.footer-contacts__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.footer-contacts__item svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-contacts__item p {
+  margin: 4px 0 0;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 40px 0 12px;
+}
+
+.footer__legal {
+  margin: 0;
+  font-size: 8px;
+  text-align: center;
+}
 @media (max-width: 900px) {
   .footer {
     padding: 40px 24px 24px;
