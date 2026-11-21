@@ -83,3 +83,212 @@
     height: 300px;
   }
 }
+
+/* ========== Հերո ========== */
+.xnayoxutyuner-page {
+  position: relative;
+  width: 100%;
+  background: #f3f5fa;
+  overflow: hidden;
+}
+
+.xnayoxutyuner-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 130px;
+  background: #62b936;
+}
+
+.xnayoxutyuner-hero {
+  max-width: 1440px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.xnayoxutyuner-text {
+  flex: 1;
+}
+
+.xnayoxutyuner-title {
+  margin: 0 0 28px;
+  font-size: clamp(36px, 5vw, 80px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #111;
+}
+
+.xnayoxutyuner-subtitle {
+  margin: 0 0 56px;
+  font-size: clamp(16px, 1.4vw, 20px);
+  color: #333;
+}
+
+.xnayoxutyuner-btn {
+  padding: 22px 36px;
+  border: none;
+  border-radius: 14px;
+  background: #62b936;
+  color: #fff;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.xnayoxutyuner-btn:hover {
+  background: #54a22d;
+  transform: translateY(-2px);
+}
+
+.xnayoxutyuner-image {
+  align-self: flex-end;
+  flex: 0 0 auto;
+}
+
+.xnayoxutyuner-image img {
+  display: block;
+  height: 430px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ========== Խնայողության տարբերակներ ========== */
+.saving-options {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 100px;
+}
+
+.saving-options__title {
+  margin: 0 0 48px;
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 500;
+  color: #111;
+}
+
+.saving-options__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ========== Քարտ ========== */
+.saving-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #eceef3;
+  border-radius: 16px;
+}
+
+.saving-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  background: #f3f5fa;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.saving-card__image img {
+  max-width: 70%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.saving-card__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 24px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+}
+
+.saving-card__arrow {
+  color: #62b936;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.saving-card__title:hover .saving-card__arrow {
+  transform: translateX(4px);
+}
+
+.saving-card__text {
+  margin: 0 0 32px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.saving-card__btn {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+  border: 1px solid #c9ccd3;
+  border-radius: 14px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.saving-card__btn:hover {
+  border-color: #62b936;
+  background: #f6fbf3;
+}
+
+/* ========== Պլանշետ ========== */
+@media (max-width: 1100px) {
+  .saving-options {
+    padding: 40px;
+  }
+
+  .saving-options__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========== Բջջային ========== */
+@media (max-width: 900px) {
+  .xnayoxutyuner-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px 0;
+  }
+
+  .xnayoxutyuner-subtitle {
+    margin-bottom: 32px;
+  }
+
+  .xnayoxutyuner-image {
+    align-self: center;
+    margin-top: 32px;
+  }
+
+  .xnayoxutyuner-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .saving-options {
+    padding: 32px 20px;
+  }
+
+  .saving-options__grid {
+    grid-template-columns: 1fr;
+  }
+}
