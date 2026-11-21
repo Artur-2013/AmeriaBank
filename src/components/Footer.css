@@ -1,0 +1,215 @@
+.ameria-footer-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ameria-feedback-tab {
+  position: fixed;
+  left: 0;
+  top: 52%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background-color: #f38b20;
+  color: #ffffff;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 14px 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 900;
+}
+
+.ameria-footer {
+  background-color: #1c1c1c;
+  color: #e6e6e6;
+  padding: 42px 72px 54px 72px;
+}
+
+.ameria-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.ameria-footer-notice {
+  margin-bottom: 36px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #d4d4d4;
+}
+
+.ameria-footer-greeting {
+  margin-bottom: 12px;
+}
+
+.ameria-footer-disclaimer {
+  max-width: 1080px;
+}
+
+.ameria-footer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ameria-footer-columns {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ameria-footer-col {
+  width: 245px;
+  margin-right: 28px;
+}
+
+.ameria-footer-col:last-child {
+  margin-right: 0;
+}
+
+.ameria-footer-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.ameria-footer-list {
+  list-style: none;
+}
+
+.ameria-footer-list li {
+  margin-bottom: 11px;
+  line-height: 1.4;
+}
+
+.ameria-footer-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ameria-footer-list a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.ameria-footer-list a:hover {
+  color: #6ab92d;
+}
+
+.ameria-footer-contacts {
+  width: 280px;
+  margin-left: 24px;
+}
+
+.ameria-contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.ameria-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.ameria-contact-icon {
+  width: 22px;
+  height: 22px;
+  color: #cccccc;
+  margin-right: 14px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.ameria-contact-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #d8d8d8;
+}
+
+.ameria-contact-heading {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.ameria-contact-value {
+  color: #cccccc;
+}
+
+.ameria-contact-mail {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ameria-contact-mail:hover {
+  color: #6ab92d;
+}
+
+.ameria-floating-chat {
+  position: fixed;
+  right: 22px;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 950;
+}
+
+.ameria-chat-bubble-btn {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.ameria-chat-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ameria-chat-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #76c02b;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.ameria-chat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.ameria-scroll-top {
+  width: 34px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ameria-up-arrow {
+  width: 12px;
+  height: 8px;
+}
