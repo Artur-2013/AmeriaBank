@@ -14,13 +14,13 @@ export default function App() {
     <div className="app">
       <Header />
       <main className="app-content">
-        <Glxavor />
+        {/*<Glxavor />
         <Cards />
         <Hashivner />
         <Login />
         <Poxancumner />
         <Tvayin />
-        <Varker />
+        <Varker /> */}
         <Xnayoxutyuner />
       </main>
       <Footer />
