@@ -202,7 +202,20 @@ export default function Glxavor() {
   </svg>
   <span className="gl-link-card__title">Հեռավար բանկինգ</span>
 </a>
+<a href="#" className="gl-link-card">
+  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M7 21c0-6 5-10 12-10 4 0 7 1 9 3l5-1-1 6c1 1 2 3 2 5l-3 1-1 5h-4l-1-2h-7l-1 2h-4l-1-5c-3-1-6-2-6-4z" />
+    <path d="M16 15h6" />
+    <circle cx="28" cy="20" r=".9" />
+  </svg>
+  <span className="gl-link-card__title">Խնայողություններ</span>
+</a>
     </div>
+  </div>
+</div>
+<div className="gl-container gl-feature">
+  <div className="gl-feature__card">
+    <h2>Ամերիան առաջինն է</h2>
   </div>
 </div>
     </section>

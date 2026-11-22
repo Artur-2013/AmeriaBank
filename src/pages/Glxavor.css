@@ -185,3 +185,26 @@
   font-size: 18px;
   font-weight: 700;
 }   
+/* Ամերիան առաջինն է */
+.gl-feature {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.gl-feature__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  padding: 12px 12px 12px 56px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+}
+
+.gl-feature h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0;
+}
