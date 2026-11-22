@@ -70,7 +70,7 @@ function OnlineDeposit() {
     <section className="online-deposit">
       <div className="online-deposit__card">
         <div className="online-deposit__image">
-          <img src={GIRL_IMG} alt="Օնլայն ավանդ" />
+          <img src={IMAGES.girl} alt="Օնլայն ավանդ" />
         </div>
 
         <div className="online-deposit__content">
