@@ -1,5 +1,6 @@
 import MyCarCard from './MyCarCard';
 import MyWordsCard from './MyWordsCard';
+import EcosystemCards from './EcosystemCards';
 import './Tvayin.css';
 
 export default function Tvayin() {
@@ -15,13 +16,16 @@ export default function Tvayin() {
         </div>
       </section>
 
-      {/* Քարտերի շարք՝ վիդեո քարտը և կողքին փոփոխվող բառերով քարտը */}
+      {/* Վիդեո քարտը և փոփոխվող բառերով քարտը */}
       <section className="tvayin-cards-section">
         <div className="tvayin-cards-row">
           <MyCarCard />
           <MyWordsCard />
         </div>
       </section>
+
+      {/* Երեք քարտերի շարք՝ MyAmeria, MyHome, MyCar */}
+      <EcosystemCards />
     </div>
   );
 }
