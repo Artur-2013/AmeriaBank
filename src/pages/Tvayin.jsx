@@ -1,6 +1,7 @@
 import MyCarCard from './MyCarCard';
 import MyWordsCard from './MyWordsCard';
 import EcosystemCards from './EcosystemCards';
+import OnlineBankingSection from './OnlineBankingSection';
 import './Tvayin.css';
 
 export default function Tvayin() {
@@ -24,8 +25,11 @@ export default function Tvayin() {
         </div>
       </section>
 
-      {/* Երեք քարտերի շարք՝ MyAmeria, MyHome, MyCar */}
+      {/* 9 քարտերից բաղկացած ցանց */}
       <EcosystemCards />
+
+      {/* Էլ ի՞նչ կարող ես անել օնլայն */}
+      <OnlineBankingSection />
     </div>
   );
 }
