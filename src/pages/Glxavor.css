@@ -137,3 +137,15 @@
 .gl-promo--blue p { max-width: none; }
 .gl-promo--blue .gl-promo__text { max-width: 340px; }
 .gl-promo--blue p { max-width: none; }
+
+
+/* Օգտակար հղումներ */
+.gl-links {
+  background: #f3f4f7;
+  padding: 40px 0 48px;
+}
+.gl-links h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 32px;
+}

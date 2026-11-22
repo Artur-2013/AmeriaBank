@@ -164,6 +164,11 @@ export default function Glxavor() {
   />
 </div>
       </div>
+      <div className="gl-links">
+  <div className="gl-container">
+    <h2>Օգտակար հղումներ</h2>
+  </div>
+</div>
     </section>
   );
 }
