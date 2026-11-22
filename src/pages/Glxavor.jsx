@@ -151,12 +151,18 @@ export default function Glxavor() {
             alt=""
           />
         </div>
-        <div className="gl-promo gl-promo--blue">
-          <div className="gl-promo__text">
-            <h2>Stop գործիքներ</h2>
-            <p>Քո ֆինանսների անվտանգության համար</p>
-          </div>
-        </div>
+    <div className="gl-promo gl-promo--blue">
+  <div className="gl-promo__text">
+    <h2>Stop գործիքներ</h2>
+    <p>Քո ֆինանսների անվտանգության համար</p>
+    <a href="#" className="gl-promo__btn">Իմանալ ավելին</a>
+  </div>
+  <img
+    className="gl-promo__img"
+    src="https://ameriabank.am/Portals/0/Images/contact-us/stop.png"
+    alt=""
+  />
+</div>
       </div>
     </section>
   );
