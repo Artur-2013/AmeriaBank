@@ -96,7 +96,21 @@
 .gl-promo--green { background: #86bd56; }
 
 .gl-promo h2 { font-size: 20px; font-weight: 700; margin: 0 0 32px; }
-.gl-promo p { font-size: 15px; line-height: 1.5; margin: 0; max-width: 260px; }
+.glxavor-page .gl-promo__btn {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: 10px;
+  margin-top: 40px;
+  background: #fff;
+  border: 1px solid #c9ccd1;
+  color: #1d1d1b;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.glxavor-page .gl-promo__btn:hover { background: #1d1d1b; color: #fff; }
+.glxavor-page .gl-promo__btn:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
 @media (max-width: 900px) {
   .gl-promos { grid-template-columns: 1fr; }
 }

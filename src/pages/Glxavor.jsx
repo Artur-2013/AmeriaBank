@@ -141,7 +141,8 @@ export default function Glxavor() {
       <div className="gl-container gl-promos">
   <div className="gl-promo gl-promo--green">
     <h2>Օնլայն վարկեր</h2>
-    <p>Նոր հնարավորություններ քո նոր գաղափարների համար</p>
+    <p>Նոր հնարավորություններ քո նոր<br/> գաղափարների համար</p>
+    <a href="#" className="gl-promo__btn">Իմանալ ավելին</a>
   </div>
 </div>
     </section>
