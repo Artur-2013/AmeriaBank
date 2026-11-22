@@ -36,28 +36,56 @@ const offers = [
   {
     title: 'Սա ուրբաթը կանչում է',
     text: 'Գնիր կահույք, կենցաղային և համակարգչային տեխնիկա, շինանյութ մեր գործընկերներից՝ Ամերիայի 0% ապառիկով։',
-    img: '/images/offer-1.jpg',
+    img: 'https://ameriabank.am/Portals/0/Images/special-offers/black-friday-offer.png',
     bg: '#2b2b2b',
   },
   {
     title: 'Բեր գույքի գրավով վարկ',
     text: 'Նվազեցրու գույքի գրավով վարկիդ տոկոսը',
-    img: '/images/offer-2.jpg',
+    img: 'https://ameriabank.am/Portals/0/Images/special-offers/refinance-arm.png',
     bg: '#1f6fb5',
   },
   {
     title: 'Քո նոր մեքենան 0% կանխավճարով',
     text: 'Արի mycar.am, ընտրիր քո մեքենան առաջնային շուկայից և ձևակերպիր օնլայն ավտովարկ 0% կանխավճարով ու ավելի ցածր տոկոսադրույքով։',
-    img: '/images/offer-3.jpg',
+    img: 'https://ameriabank.am/Portals/0/Images/special-offers/car-down-payment-offer-arm.png',
     bg: '#3c4a2f',
   },
   {
     title: 'Amazon-ի 115 նվեր քարտ',
     text: 'Միջազգային օնլայն գործարքներդ կատարի Mastercard քարտով',
-    img: '/images/offer-4.jpg',
+    img: 'https://ameriabank.am/Portals/0/Images/campaigns/amazon-gift-card/amazon-special-offer-arm.png',
     bg: '#6bbf3a',
   },
 ];
+const CURRENCIES = ['AMD', 'USD', 'EUR', 'GBP', 'RUB', 'GEL'];
+
+// [առք, վաճառք]
+const rates = {
+  USD: { cash: [357.5, 362.5], non: [357.5, 362.5] },
+  EUR: { cash: [388, 402], non: [388, 402] },
+  GBP: { cash: [462, 482], non: [462, 482] },
+  RUB: { cash: [4.13, 4.45], non: [4.24, 4.54] },
+  GEL: { cash: [133.5, 144], non: null },
+};
+
+const fmt = (n) =>
+  n == null ? '' : n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function convert(amount, from, to, mode) {
+  if (!(amount >= 0)) return null;
+  if (from === to) return amount;
+  let amd = amount;
+  if (from !== 'AMD') {
+    const r = rates[from][mode];
+    if (!r) return null;
+    amd = amount * r[0];
+  }
+  if (to === 'AMD') return amd;
+  const r = rates[to][mode];
+  if (!r) return null;
+  return amd / r[1];
+}
 export default function Glxavor() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -70,7 +98,13 @@ const scrollOffers = (dir) => {
   const el = offersRef.current;
   if (el) el.scrollBy({ left: dir * 354, behavior: 'smooth' });
 };
+const [rateTab, setRateTab] = useState('rates');
+const [convMode, setConvMode] = useState('non');
+const [amount, setAmount] = useState('');
+const [from, setFrom] = useState('AMD');
+const [to, setTo] = useState('USD');
 
+const result = convert(parseFloat(amount.replace(',', '.')), from, to, convMode);
   const go = (dir) => setActive((i) => (i + dir + slides.length) % slides.length);
 
   useEffect(() => {
@@ -295,6 +329,140 @@ const scrollOffers = (dir) => {
   <button type="button" role="tab" aria-selected="false" className="gl-showcase__tab">MyInvest</button>
   <button type="button" role="tab" aria-selected="false" className="gl-showcase__tab">MyBusiness</button>
 </div>
+  </div>
+</div>
+<div className="gl-container gl-offers">
+  <div className="gl-offers__head">
+    <h2>Գործող հատուկ առաջարկներ</h2>
+    <div className="gl-offers__arrows">
+      <button type="button" className="gl-offers__arrow" aria-label="Նախորդ" onClick={() => scrollOffers(-1)}>
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6" /></svg>
+      </button>
+      <button type="button" className="gl-offers__arrow" aria-label="Հաջորդ" onClick={() => scrollOffers(1)}>
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6" /></svg>
+      </button>
+    </div>
+  </div>
+
+  <div className="gl-offers__track" ref={offersRef}>
+    {offers.map((o) => (
+      <article className="gl-offer" key={o.title}>
+        <div className="gl-offer__media" style={{ background: o.bg }}>
+          <img
+            src={o.img}
+            alt=""
+            onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+          />
+        </div>
+        <h3 className="gl-offer__title">
+          <span>{o.title}</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 8h10m0 0-4-4m4 4-4 4" /></svg>
+        </h3>
+        <p className="gl-offer__text">{o.text}</p>
+        <a href="#" className="gl-offer__btn">Իմանալ ավելին</a>
+      </article>
+    ))}
+  </div>
+</div>
+<div className="gl-container gl-fx">
+  {/* Ձախ՝ փոխարժեքներ */}
+  <div className="gl-fx__rates">
+    <h2>Տարադրամի փոխարժեքն այսօր</h2>
+    <p className="gl-fx__sub">
+      Ծանոթացիր <a href="#">տարադրամի և ոսկու փոխարժեքներին</a>:
+    </p>
+
+    <div className="gl-fx__radios gl-fx__radios--center">
+      <label>
+        <input type="radio" name="rateTab" checked={rateTab === 'rates'} onChange={() => setRateTab('rates')} />
+        ՓՈԽԱՐԺԵՔ
+      </label>
+      <label>
+        <input type="radio" name="rateTab" checked={rateTab === 'gold'} onChange={() => setRateTab('gold')} />
+        ՈՍԿԻ
+      </label>
+    </div>
+
+    {rateTab === 'rates' ? (
+      <table className="gl-fx__table">
+        <thead>
+          <tr>
+            <th />
+            <th colSpan="2">Կանխիկ</th>
+            <th colSpan="2">Անկանխիկ</th>
+          </tr>
+          <tr>
+            <th />
+            <th>առք</th>
+            <th>վաճառք</th>
+            <th>առք</th>
+            <th>վաճառք</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(rates).map(([cur, r]) => (
+            <tr key={cur}>
+              <td>{cur}</td>
+              <td>{fmt(r.cash?.[0])}</td>
+              <td>{fmt(r.cash?.[1])}</td>
+              <td>{fmt(r.non?.[0])}</td>
+              <td>{fmt(r.non?.[1])}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ) : (
+      <p className="gl-fx__empty">Ոսկու փոխարժեքները դեռ ավելացված չեն։</p>
+    )}
+
+    <p className="gl-fx__note">
+      Քարտային փոխարժեքը սահմանվում է՝ գործարքի հաշվառման արժույթի անկանխիկ առքի փոխարժեքից նվազեցնելով 1 (մեկ) ՀՀ դրամ և անկանխիկ վաճառքի փոխարժեքին ավելացնելով 1 (մեկ) ՀՀ դրամ:
+    </p>
+  </div>
+
+  {/* Աջ՝ հաշվիչ */}
+  <div className="gl-fx__calc">
+    <h2>Տարադրամի հաշվիչ</h2>
+
+    <div className="gl-fx__radios">
+      <label>
+        <input type="radio" name="convMode" checked={convMode === 'cash'} onChange={() => setConvMode('cash')} />
+        ԿԱՆԽԻԿ
+      </label>
+      <label>
+        <input type="radio" name="convMode" checked={convMode === 'non'} onChange={() => setConvMode('non')} />
+        ԱՆԿԱՆԽԻԿ
+      </label>
+    </div>
+
+    <label className="gl-fx__label" htmlFor="fx-have">Ես ունեմ</label>
+    <div className="gl-fx__row">
+      <input
+        id="fx-have"
+        className="gl-fx__input"
+        type="text"
+        inputMode="decimal"
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
+      />
+      <select className="gl-fx__select" value={from} onChange={(e) => setFrom(e.target.value)} aria-label="Արժույթ">
+        {CURRENCIES.map((c) => <option key={c}>{c}</option>)}
+      </select>
+    </div>
+
+    <label className="gl-fx__label" htmlFor="fx-need">Ինձ պետք է</label>
+    <div className="gl-fx__row">
+      <input
+        id="fx-need"
+        className="gl-fx__input"
+        type="text"
+        readOnly
+        value={amount === '' ? '' : result == null ? '—' : fmt(result)}
+      />
+      <select className="gl-fx__select" value={to} onChange={(e) => setTo(e.target.value)} aria-label="Արժույթ">
+        {CURRENCIES.map((c) => <option key={c}>{c}</option>)}
+      </select>
+    </div>
   </div>
 </div>
     </section>

@@ -370,3 +370,100 @@
   border-color: #78be20;
 }
 .gl-showcase__tab:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+/* Գործող հատուկ առաջարկներ */
+.gl-offers { padding-top: 56px; padding-bottom: 56px; }
+
+.gl-offers__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.gl-offers__head h2 { font-size: 34px; font-weight: 600; margin: 0; }
+
+.gl-offers__arrows { display: flex; gap: 10px; }
+.gl-offers__arrow {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #1d1d1b;
+  cursor: pointer;
+  transition: background .2s;
+}
+.gl-offers__arrow:hover { background: #e5e7eb; }
+.gl-offers__arrow:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
+.gl-offers__arrow svg { width: 18px; height: 18px; }
+
+.gl-offers__track {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 16px;
+  scrollbar-width: none;
+}
+.gl-offers__track::-webkit-scrollbar { display: none; }
+
+.gl-offer {
+  flex: 0 0 314px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .08);
+  scroll-snap-align: start;
+}
+
+.gl-offer__media {
+  height: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.gl-offer__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.gl-offer__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.gl-offer__title span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.gl-offer__title svg { flex: 0 0 14px; width: 14px; height: 14px; color: #78be20; }
+
+.glxavor-page .gl-offer__text {
+  flex: 1;
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.glxavor-page a.gl-offer__btn {
+  display: block;
+  padding: 12px;
+  border: 1px solid #c9ccd1;
+  border-radius: 10px;
+  background: #fff;
+  color: #1d1d1b;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.glxavor-page a.gl-offer__btn:hover { background: #1d1d1b; border-color: #1d1d1b; color: #fff; }
+.glxavor-page a.gl-offer__btn:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
