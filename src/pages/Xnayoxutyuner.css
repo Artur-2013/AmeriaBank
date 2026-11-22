@@ -9,97 +9,11 @@
   --text: #333;
 }
 
-.xnayoxutyuner-page {
-  position: relative;
-  width: 100%;
-  background: #f3f5fa;
-  overflow: hidden;
-}
-
-.xnayoxutyuner-hero {
-  max-width: 1440px;
-  min-height: 430px;
-  margin: 0 auto;
-  padding: 0 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.xnayoxutyuner-text {
-  flex: 1;
-}
-
-.xnayoxutyuner-title {
-  margin: 0 0 28px;
-  font-size: clamp(36px, 5vw, 80px);
-  font-weight: 500;
-  line-height: 1.1;
-  color: #111;
-}
-
-.xnayoxutyuner-subtitle {
-  margin: 0 0 56px;
-  font-size: clamp(16px, 1.4vw, 20px);
-  color: #333;
-}
-
-.xnayoxutyuner-btn {
-  padding: 22px 36px;
-  border: none;
-  border-radius: 14px;
-  background: #62b936;
-  color: #fff;
-  font-size: 18px;
-  font-family: inherit;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.xnayoxutyuner-btn:hover {
-  background: #54a22d;
-  transform: translateY(-2px);
-}
-
-.xnayoxutyuner-image {
-  align-self: flex-end;
-  flex: 0 0 auto;
-}
-
-.xnayoxutyuner-image img {
-  display: block;
-  height: 430px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Պլանշետ / բջջային */
-@media (max-width: 900px) {
-  .xnayoxutyuner-hero {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 24px 0;
-  }
-
-  .xnayoxutyuner-subtitle {
-    margin-bottom: 32px;
-  }
-
-  .xnayoxutyuner-image {
-    align-self: center;
-    margin-top: 32px;
-  }
-
-  .xnayoxutyuner-image img {
-    height: 300px;
-  }
-}
-
 /* ========== Հերո ========== */
 .xnayoxutyuner-page {
   position: relative;
   width: 100%;
-  background: #f3f5fa;
+  background: var(--bg);
   overflow: hidden;
 }
 
@@ -110,7 +24,7 @@
   right: 0;
   width: 4px;
   height: 130px;
-  background: #62b936;
+  background: var(--green);
 }
 
 .xnayoxutyuner-hero {
@@ -132,20 +46,20 @@
   font-size: clamp(36px, 5vw, 80px);
   font-weight: 500;
   line-height: 1.1;
-  color: #111;
+  color: var(--title);
 }
 
 .xnayoxutyuner-subtitle {
   margin: 0 0 56px;
   font-size: clamp(16px, 1.4vw, 20px);
-  color: #333;
+  color: var(--text);
 }
 
 .xnayoxutyuner-btn {
   padding: 22px 36px;
   border: none;
   border-radius: 14px;
-  background: #62b936;
+  background: var(--green);
   color: #fff;
   font-size: 18px;
   font-family: inherit;
@@ -154,7 +68,7 @@
 }
 
 .xnayoxutyuner-btn:hover {
-  background: #54a22d;
+  background: var(--green-dark);
   transform: translateY(-2px);
 }
 
@@ -228,8 +142,8 @@
 }
 
 .saving-card__arrow {
+  display: inline-flex;
   color: #62b936;
-  font-size: 18px;
   transition: transform 0.2s;
 }
 
@@ -259,49 +173,6 @@
 .saving-card__btn:hover {
   border-color: #62b936;
   background: #f6fbf3;
-}
-
-/* ========== Պլանշետ ========== */
-@media (max-width: 1100px) {
-  .saving-options {
-    padding: 40px;
-  }
-
-  .saving-options__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ========== Բջջային ========== */
-@media (max-width: 900px) {
-  .xnayoxutyuner-hero {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 24px 0;
-  }
-
-  .xnayoxutyuner-subtitle {
-    margin-bottom: 32px;
-  }
-
-  .xnayoxutyuner-image {
-    align-self: center;
-    margin-top: 32px;
-  }
-
-  .xnayoxutyuner-image img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 700px) {
-  .saving-options {
-    padding: 32px 20px;
-  }
-
-  .saving-options__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ========== Օնլայն ավանդ ========== */
@@ -396,7 +267,16 @@
   background: #f6fbf3;
 }
 
+/* ========== Պլանշետ ========== */
 @media (max-width: 1100px) {
+  .saving-options {
+    padding: 40px;
+  }
+
+  .saving-options__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .online-deposit {
     padding: 20px 40px 40px;
   }
@@ -411,6 +291,28 @@
 
   .online-deposit__content {
     padding: 28px;
+  }
+}
+
+/* ========== Բջջային ========== */
+@media (max-width: 900px) {
+  .xnayoxutyuner-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px 0;
+  }
+
+  .xnayoxutyuner-subtitle {
+    margin-bottom: 32px;
+  }
+
+  .xnayoxutyuner-image {
+    align-self: center;
+    margin-top: 32px;
+  }
+
+  .xnayoxutyuner-image img {
+    height: 300px;
   }
 }
 
@@ -444,5 +346,15 @@
 
   .online-deposit__btn {
     text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .saving-options {
+    padding: 32px 20px;
+  }
+
+  .saving-options__grid {
+    grid-template-columns: 1fr;
   }
 }
