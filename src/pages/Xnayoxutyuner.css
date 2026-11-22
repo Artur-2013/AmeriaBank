@@ -292,3 +292,147 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ========== Օնլայն ավանդ ========== */
+.online-deposit {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 100px 60px;
+}
+
+.online-deposit__card {
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  background: #fff;
+  border: 1px solid #eceef3;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.online-deposit__image {
+  flex: 0 0 40%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.online-deposit__image img {
+  display: block;
+  height: 580px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.online-deposit__content {
+  flex: 1;
+  padding: 40px 60px 40px 40px;
+}
+
+.online-deposit__title {
+  margin: 0 0 20px;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #111;
+}
+
+.online-deposit__text {
+  max-width: 720px;
+  margin: 0 0 32px;
+  font-size: clamp(16px, 1.5vw, 22px);
+  line-height: 1.5;
+  color: #333;
+}
+
+.online-deposit__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.online-deposit__btn {
+  padding: 20px 36px;
+  font-size: 18px;
+  font-family: inherit;
+  text-decoration: none;
+  border-radius: 14px;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.online-deposit__btn--primary {
+  background: #62b936;
+  color: #fff;
+  border: 1px solid #62b936;
+}
+
+.online-deposit__btn--primary:hover {
+  background: #54a22d;
+  transform: translateY(-2px);
+}
+
+.online-deposit__btn--outline {
+  background: #fff;
+  color: #111;
+  border: 1px solid #c9ccd3;
+}
+
+.online-deposit__btn--outline:hover {
+  border-color: #62b936;
+  background: #f6fbf3;
+}
+
+@media (max-width: 1100px) {
+  .online-deposit {
+    padding: 20px 40px 40px;
+  }
+
+  .online-deposit__image {
+    padding-left: 20px;
+  }
+
+  .online-deposit__image img {
+    height: 460px;
+  }
+
+  .online-deposit__content {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .online-deposit {
+    padding: 16px 20px 32px;
+  }
+
+  .online-deposit__card {
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+
+  .online-deposit__content {
+    padding: 32px 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .online-deposit__image {
+    padding: 0;
+    flex: none;
+  }
+
+  .online-deposit__image img {
+    height: 340px;
+  }
+
+  .online-deposit__actions {
+    flex-direction: column;
+  }
+
+  .online-deposit__btn {
+    text-align: center;
+  }
+}
