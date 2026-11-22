@@ -65,6 +65,11 @@ export default function Glxavor() {
   const [dragging, setDragging] = useState(false);
   const startX = useRef(null);
   const moved = useRef(false);
+  const offersRef = useRef(null);
+const scrollOffers = (dir) => {
+  const el = offersRef.current;
+  if (el) el.scrollBy({ left: dir * 354, behavior: 'smooth' });
+};
 
   const go = (dir) => setActive((i) => (i + dir + slides.length) % slides.length);
 
