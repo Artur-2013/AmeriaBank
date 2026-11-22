@@ -138,6 +138,12 @@ export default function Glxavor() {
           ))}
         </div>
       </div>
+            <div className="gl-container gl-promos">
+        <div className="gl-promo gl-promo--green">
+          <h2>Օնլայն վարկեր</h2>
+        </div>
+      </div>
+
     </section>
   );
 }

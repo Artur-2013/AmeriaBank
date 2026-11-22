@@ -78,3 +78,25 @@
   .gl-hero__visual { justify-content: center; }
   .gl-hero__visual img { max-height: 260px; }
 }
+/* Promo քարտ */
+.gl-promos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 27px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.gl-promo {
+  min-height: 260px;
+  padding: 36px;
+  border-radius: 10px;
+  color: #fff;
+}
+.gl-promo--green { background: #86bd56; }
+
+.gl-promo h2 { font-size: 20px; font-weight: 700; margin: 0; }
+
+@media (max-width: 900px) {
+  .gl-promos { grid-template-columns: 1fr; }
+}
