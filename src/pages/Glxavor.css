@@ -88,10 +88,28 @@
 }
 
 .gl-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   min-height: 260px;
   padding: 36px;
   border-radius: 10px;
   color: #fff;
+  overflow: hidden;
+}
+
+.gl-promo__text { max-width: 260px; }
+
+.gl-promo__img {
+  max-width: 45%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  .gl-promo { flex-direction: column; align-items: flex-start; }
+  .gl-promo__img { align-self: center; }
 }
 .gl-promo--green { background: #86bd56; }
 
