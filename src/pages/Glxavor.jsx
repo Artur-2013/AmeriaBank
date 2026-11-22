@@ -213,12 +213,12 @@ export default function Glxavor() {
     </div>
   </div>
 </div>
-<div className="gl-container gl-feature">
-  <div className="gl-feature__card">
-    <div className="gl-feature__text">
-      <h2>Ամերիան առաջինն է</h2>
-      <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
-    </div>
+<div className="gl-feature__text">
+  <h2>Ամերիան առաջինն է</h2>
+  <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
+  <div className="gl-feature__actions">
+    <a href="#" className="gl-feature__btn gl-feature__btn--green">Դիմել հիմա</a>
+    <a href="#" className="gl-feature__btn gl-feature__btn--ghost">Իմանալ ավելին</a>
   </div>
 </div>
     </section>

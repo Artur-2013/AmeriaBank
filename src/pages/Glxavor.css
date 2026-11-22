@@ -192,4 +192,34 @@
   line-height: 1.5;
   color: #333;
   margin: 0;
+}.gl-feature__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
 }
+
+.glxavor-page .gl-feature__btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.glxavor-page .gl-feature__btn--green {
+  background: #6fbe3f;
+  border: 1px solid #6fbe3f;
+  color: #fff;
+}
+.glxavor-page .gl-feature__btn--green:hover { background: #5aa02f; border-color: #5aa02f; }
+
+.glxavor-page .gl-feature__btn--ghost {
+  background: #fff;
+  border: 1px solid #c9ccd1;
+  color: #1d1d1b;
+}
+.glxavor-page .gl-feature__btn--ghost:hover { background: #1d1d1b; border-color: #1d1d1b; color: #fff; }
+
+.glxavor-page .gl-feature__btn:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
