@@ -254,3 +254,25 @@
   border-color: #1d1d1b !important;
   color: #fff !important;
 }
+/* MyHome / ցուցադրություն */
+.gl-showcase {
+  position: relative;
+  min-height: 580px;
+  padding: 0 24px;
+  background: #4a5ea8 url('https://ameriabank.am/Portals/0/Images/myameria/slider/myhome-banner.jpg') center / cover no-repeat;
+  color: #fff;
+}
+
+.gl-showcase__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 0;
+  text-align: center;
+}
+
+.gl-showcase h2 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+}

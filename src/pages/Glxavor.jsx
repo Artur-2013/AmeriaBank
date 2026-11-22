@@ -151,84 +151,89 @@ export default function Glxavor() {
             alt=""
           />
         </div>
-    <div className="gl-promo gl-promo--blue">
-  <div className="gl-promo__text">
-    <h2>Stop գործիքներ</h2>
-    <p>Քո ֆինանսների անվտանգության համար</p>
-    <a href="#" className="gl-promo__btn">Իմանալ ավելին</a>
-  </div>
-  <img
-    className="gl-promo__img"
-    src="https://ameriabank.am/Portals/0/Images/contact-us/stop.png"
-    alt=""
-  />
-</div>
+        <div className="gl-promo gl-promo--blue">
+          <div className="gl-promo__text">
+            <h2>Stop գործիքներ</h2>
+            <p>Քո ֆինանսների անվտանգության համար</p>
+            <a href="#" className="gl-promo__btn">Իմանալ ավելին</a>
+          </div>
+          <img
+            className="gl-promo__img"
+            src="https://ameriabank.am/Portals/0/Images/contact-us/stop.png"
+            alt=""
+          />
+        </div>
       </div>
       <div className="gl-links">
-  <div className="gl-container">
-    <h2>Օգտակար հղումներ</h2>
+        <div className="gl-container">
+          <h2>Օգտակար հղումներ</h2>
 
-    <div className="gl-links__grid">
-      <a href="#" className="gl-link-card">
-        <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <rect x="4" y="9" width="32" height="22" rx="3" />
-          <path d="M4 17h32M9 25h8" />
-        </svg>
-        <span className="gl-link-card__title">Քարտեր</span>
-      </a>
+          <div className="gl-links__grid">
+            <a href="#" className="gl-link-card">
+              <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="4" y="9" width="32" height="22" rx="3" />
+                <path d="M4 17h32M9 25h8" />
+              </svg>
+              <span className="gl-link-card__title">Քարտեր</span>
+            </a>
 
-      <a href="#" className="gl-link-card">
-        <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <rect x="4" y="5" width="14" height="12" rx="2" />
-          <rect x="22" y="23" width="14" height="12" rx="2" />
-          <path d="M26 11h8m0 0-3-3m3 3-3 3M14 29H6m0 0 3-3m-3 3 3 3" />
-        </svg>
-        <span className="gl-link-card__title">Փոխանցումներ</span>
-      </a>
-      <a href="#" className="gl-link-card">
-  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M15 5h10l-3 6h-4z" />
-    <path d="M18 11c-6 3-10 8-10 15 0 5 4 8 12 8s12-3 12-8c0-7-4-12-10-15" />
-    <circle cx="16" cy="24" r="1.3" />
-    <circle cx="24" cy="30" r="1.3" />
-    <path d="M25 23l-10 8" />
-  </svg>
-  <span className="gl-link-card__title">Օնլայն վարկեր</span>
-</a>
-<a href="#" className="gl-link-card">
-  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <rect x="12" y="3" width="16" height="34" rx="3" />
-    <path d="M19 32h2" />
-  </svg>
-  <span className="gl-link-card__title">Հեռավար բանկինգ</span>
-</a>
-<a href="#" className="gl-link-card">
-  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M7 21c0-6 5-10 12-10 4 0 7 1 9 3l5-1-1 6c1 1 2 3 2 5l-3 1-1 5h-4l-1-2h-7l-1 2h-4l-1-5c-3-1-6-2-6-4z" />
-    <path d="M16 15h6" />
-    <circle cx="28" cy="20" r=".9" />
-  </svg>
-  <span className="gl-link-card__title">Խնայողություններ</span>
-</a>
-    </div>
-  </div>
-</div>
-<div className="gl-feature__card">
-  <div className="gl-feature__text">
-    <h2>Ամերիան առաջինն է</h2>
-    <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
-    <div className="gl-feature__actions">
-      <a href="#" className="gl-feature__btn gl-feature__btn--green">Դիմել հիմա</a>
-      <a href="#" className="gl-feature__btn gl-feature__btn--ghost">Իմանալ ավելին</a>
-    </div>
-  </div>
-  <img
-    className="gl-feature__img"
-    src="https://ameriabank.am/Portals/0/Images/generation/gen-a-23/special.jpg"
-    alt=""
-    onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
-  />
-</div>
+            <a href="#" className="gl-link-card">
+              <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="4" y="5" width="14" height="12" rx="2" />
+                <rect x="22" y="23" width="14" height="12" rx="2" />
+                <path d="M26 11h8m0 0-3-3m3 3-3 3M14 29H6m0 0 3-3m-3 3 3 3" />
+              </svg>
+              <span className="gl-link-card__title">Փոխանցումներ</span>
+            </a>
+            <a href="#" className="gl-link-card">
+              <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M15 5h10l-3 6h-4z" />
+                <path d="M18 11c-6 3-10 8-10 15 0 5 4 8 12 8s12-3 12-8c0-7-4-12-10-15" />
+                <circle cx="16" cy="24" r="1.3" />
+                <circle cx="24" cy="30" r="1.3" />
+                <path d="M25 23l-10 8" />
+              </svg>
+              <span className="gl-link-card__title">Օնլայն վարկեր</span>
+            </a>
+            <a href="#" className="gl-link-card">
+              <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="12" y="3" width="16" height="34" rx="3" />
+                <path d="M19 32h2" />
+              </svg>
+              <span className="gl-link-card__title">Հեռավար բանկինգ</span>
+            </a>
+            <a href="#" className="gl-link-card">
+              <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 21c0-6 5-10 12-10 4 0 7 1 9 3l5-1-1 6c1 1 2 3 2 5l-3 1-1 5h-4l-1-2h-7l-1 2h-4l-1-5c-3-1-6-2-6-4z" />
+                <path d="M16 15h6" />
+                <circle cx="28" cy="20" r=".9" />
+              </svg>
+              <span className="gl-link-card__title">Խնայողություններ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="gl-feature__card">
+        <div className="gl-feature__text">
+          <h2>Ամերիան առաջինն է</h2>
+          <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
+          <div className="gl-feature__actions">
+            <a href="#" className="gl-feature__btn gl-feature__btn--green">Դիմել հիմա</a>
+            <a href="#" className="gl-feature__btn gl-feature__btn--ghost">Իմանալ ավելին</a>
+          </div>
+        </div>
+        <img
+          className="gl-feature__img"
+          src="https://ameriabank.am/Portals/0/Images/generation/gen-a-23/special.jpg"
+          alt=""
+          onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+        />
+      </div>
+      <div className="gl-showcase">
+        <div className="gl-showcase__inner">
+          <h2>MyHome</h2>
+        </div>
+      </div>
     </section>
   );
 }
