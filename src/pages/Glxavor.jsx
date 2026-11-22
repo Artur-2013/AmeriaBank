@@ -195,7 +195,13 @@ export default function Glxavor() {
   </svg>
   <span className="gl-link-card__title">Օնլայն վարկեր</span>
 </a>
-
+<a href="#" className="gl-link-card">
+  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="12" y="3" width="16" height="34" rx="3" />
+    <path d="M19 32h2" />
+  </svg>
+  <span className="gl-link-card__title">Հեռավար բանկինգ</span>
+</a>
     </div>
   </div>
 </div>
