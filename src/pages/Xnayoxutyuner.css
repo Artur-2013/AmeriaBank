@@ -1,3 +1,14 @@
+:root {
+  --green: #62b936;
+  --green-dark: #54a22d;
+  --green-light: #f6fbf3;
+  --bg: #f3f5fa;
+  --border: #eceef3;
+  --border-strong: #c9ccd3;
+  --title: #111;
+  --text: #333;
+}
+
 .xnayoxutyuner-page {
   position: relative;
   width: 100%;
