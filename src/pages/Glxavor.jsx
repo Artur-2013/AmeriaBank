@@ -237,6 +237,28 @@ export default function Glxavor() {
       Ընտրիր քո նոր բնակարանը, ստացիր վարկային հայտի պատասխանն օնլայն մի քանի րոպեում, այցելիր նոտարական գրասենյակ և ստորագրիր...
     </p>
     <a href="#" className="gl-showcase__btn">Իմանալ ավելին</a>
+
+    <div className="gl-showcase__frame">
+      <div className="gl-showcase__dots">
+        <button type="button" className="gl-showcase__dot is-active" aria-label="Առաջին">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
+            <path d="M8 3v10M3 8h10" />
+          </svg>
+        </button>
+        <button type="button" className="gl-showcase__dot" aria-label="Երկրորդ">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M3 8h10m0 0-4-4m4 4-4 4" />
+          </svg>
+        </button>
+        <button type="button" className="gl-showcase__dot" aria-label="Երրորդ">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <circle cx="3.5" cy="8" r="1.1" />
+            <circle cx="8" cy="8" r="1.1" />
+            <circle cx="12.5" cy="8" r="1.1" />
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
     </section>
