@@ -43,6 +43,27 @@ function PhoneIcon() {
   );
 }
 
+function WalletIcon() {
+  return (
+    <svg {...iconProps}>
+      <rect x="3" y="7" width="18" height="13" rx="2.5" />
+      <path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7" />
+      <path d="M3 12h18" />
+      <circle cx="12" cy="12" r="1.2" />
+    </svg>
+  );
+}
+
+function ChartIcon() {
+  return (
+    <svg {...iconProps}>
+      <rect x="3" y="3" width="18" height="18" rx="2.5" />
+      <path d="M7 15l3-3 3 2 4-5" />
+      <path d="M14 9h3v3" />
+    </svg>
+  );
+}
+
 const OPTIONS = [
   {
     id: 1,
