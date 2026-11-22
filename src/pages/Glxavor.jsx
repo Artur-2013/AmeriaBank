@@ -213,13 +213,21 @@ export default function Glxavor() {
     </div>
   </div>
 </div>
-<div className="gl-feature__text">
-  <h2>Ամերիան առաջինն է</h2>
-  <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
-  <div className="gl-feature__actions">
-    <a href="#" className="gl-feature__btn gl-feature__btn--green">Դիմել հիմա</a>
-    <a href="#" className="gl-feature__btn gl-feature__btn--ghost">Իմանալ ավելին</a>
+<div className="gl-feature__card">
+  <div className="gl-feature__text">
+    <h2>Ամերիան առաջինն է</h2>
+    <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
+    <div className="gl-feature__actions">
+      <a href="#" className="gl-feature__btn gl-feature__btn--green">Դիմել հիմա</a>
+      <a href="#" className="gl-feature__btn gl-feature__btn--ghost">Իմանալ ավելին</a>
+    </div>
   </div>
+  <img
+    className="gl-feature__img"
+    src="/images/amerian-first.png"
+    alt=""
+    onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+  />
 </div>
     </section>
   );
