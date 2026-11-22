@@ -32,7 +32,32 @@ const slides = [
     img: 'https://ameriabank.am/Portals/0/Images/New-home/card-banner.png',
   },
 ];
-
+const offers = [
+  {
+    title: 'Սա ուրբաթը կանչում է',
+    text: 'Գնիր կահույք, կենցաղային և համակարգչային տեխնիկա, շինանյութ մեր գործընկերներից՝ Ամերիայի 0% ապառիկով։',
+    img: '/images/offer-1.jpg',
+    bg: '#2b2b2b',
+  },
+  {
+    title: 'Բեր գույքի գրավով վարկ',
+    text: 'Նվազեցրու գույքի գրավով վարկիդ տոկոսը',
+    img: '/images/offer-2.jpg',
+    bg: '#1f6fb5',
+  },
+  {
+    title: 'Քո նոր մեքենան 0% կանխավճարով',
+    text: 'Արի mycar.am, ընտրիր քո մեքենան առաջնային շուկայից և ձևակերպիր օնլայն ավտովարկ 0% կանխավճարով ու ավելի ցածր տոկոսադրույքով։',
+    img: '/images/offer-3.jpg',
+    bg: '#3c4a2f',
+  },
+  {
+    title: 'Amazon-ի 115 նվեր քարտ',
+    text: 'Միջազգային օնլայն գործարքներդ կատարի Mastercard քարտով',
+    img: '/images/offer-4.jpg',
+    bg: '#6bbf3a',
+  },
+];
 export default function Glxavor() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -259,6 +284,12 @@ export default function Glxavor() {
         </button>
       </div>
     </div>
+    <div className="gl-showcase__tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" className="gl-showcase__tab is-active">MyHome</button>
+  <button type="button" role="tab" aria-selected="false" className="gl-showcase__tab">MyCar</button>
+  <button type="button" role="tab" aria-selected="false" className="gl-showcase__tab">MyInvest</button>
+  <button type="button" role="tab" aria-selected="false" className="gl-showcase__tab">MyBusiness</button>
+</div>
   </div>
 </div>
     </section>
