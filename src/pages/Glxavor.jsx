@@ -215,7 +215,10 @@ export default function Glxavor() {
 </div>
 <div className="gl-container gl-feature">
   <div className="gl-feature__card">
-    <h2>Ամերիան առաջինն է</h2>
+    <div className="gl-feature__text">
+      <h2>Ամերիան առաջինն է</h2>
+      <p>Միացիր Ամերիա Սերունդ ծրագրին, ստացիր եռամսյա վճարովի ուսուցում և հնարավորություն՝ սկսելու քո կարիերան Ամերիայում։</p>
+    </div>
   </div>
 </div>
     </section>
