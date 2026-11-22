@@ -21,6 +21,28 @@ function ArrowIcon({ size = 18 }) {
     </svg>
   );
 }
+
+const iconProps = {
+  width: 22,
+  height: 22,
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: '#fff',
+  strokeWidth: 1.8,
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
+};
+
+function PhoneIcon() {
+  return (
+    <svg {...iconProps}>
+      <rect x="6" y="2" width="12" height="20" rx="2.5" />
+      <path d="M10.5 19h3" />
+      <path d="M9.5 15l2.5-7 2.5 7" />
+    </svg>
+  );
+}
+
 const OPTIONS = [
   {
     id: 1,
