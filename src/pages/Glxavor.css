@@ -133,3 +133,5 @@
   .gl-promos { grid-template-columns: 1fr; }
 }
 .gl-promo--blue { background: linear-gradient(90deg, #3a7fbf, #4a9fdc); }   
+.gl-promo--blue .gl-promo__text { max-width: 340px; }
+.gl-promo--blue p { max-width: none; }
