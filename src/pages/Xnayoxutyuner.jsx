@@ -70,7 +70,9 @@ function SavingCard({ image, title, text, link }) {
 
       <a href={link} className="saving-card__title">
         {title}
-        <span className="saving-card__arrow">→</span>
+        <span className="saving-card__arrow">
+          <ArrowIcon />
+        </span>
       </a>
 
       <p className="saving-card__text">{text}</p>
