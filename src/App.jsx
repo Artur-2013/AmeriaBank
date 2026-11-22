@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Glxavor from './pages/Glxavor';
@@ -11,19 +12,24 @@ import Xnayoxutyuner from './pages/Xnayoxutyuner';
 
 export default function App() {
   return (
-    <div className="app">
-      <Header />
-      <main className="app-content">
-        {/*<Glxavor />
-        <Cards />
-        <Hashivner />
-        <Login />
-        <Poxancumner />
-        <Tvayin />
-        <Varker /> */}
-        <Xnayoxutyuner />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <main className="app-content">
+          {/*<Glxavor />
+          <Cards />
+          <Hashivner />
+          <Login />
+          <Poxancumner />
+          <Tvayin />
+          <Varker /> */}
+          <Routes>
+            <Route path="/" element={<Xnayoxutyuner />} />
+            <Route path="/tvayin" element={<Tvayin />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
