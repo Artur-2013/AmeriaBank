@@ -276,17 +276,34 @@
   font-weight: 600;
   line-height: 1.2;
 }
-.gl-showcase__lead {
+.glxavor-page .gl-showcase__lead {
   margin: 8px 0 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
   text-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 }
-.gl-showcase__text {
+.glxavor-page .gl-showcase__text {
   max-width: 470px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 10px;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 }
+.glxavor-page a.gl-showcase__btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 11px 20px;
+  border: 1px solid #c9ccd1;
+  border-radius: 10px;
+  background: #fff;
+  color: #1d1d1b;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: none;
+  transition: background .2s, color .2s;
+}
+.glxavor-page a.gl-showcase__btn:hover { background: #1d1d1b; border-color: #1d1d1b; color: #fff; }
+.glxavor-page a.gl-showcase__btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
