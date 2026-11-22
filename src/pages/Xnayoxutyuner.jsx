@@ -1,6 +1,7 @@
 import './Xnayoxutyuner.css';
 
 const HERO_IMG = 'https://ameriabank.am/Portals/0/Images/internal-pages/savings-banner.png';
+const GIRL_IMG = 'https://your-url.com/girl-phone.png'; // այստեղ դիր աղջկա նկարի URL-ը
 
 const OPTIONS = [
   {
@@ -24,23 +25,23 @@ const OPTIONS = [
     text: 'Դու կարող ես ներդնել որոշակի գումար՝ դրա նկատմամբ հաշվարկվող հարմար տոկոսադրույքով, ցանկացած ժամանակ ավելացնել կամ նվազեցնել գումարը, ինչպես նաև օգտագործել այն՝ առանց սահմանափակումների:',
     link: '/xnayoxakan-hashiv',
   },
-
   {
     id: 4,
     image: 'https://ameriabank.am/Portals/0/Images/deposit/bonds-illustration.png',
     title: 'Պարտատոմսեր',
     text: 'Դու ևս կարող ես դառնալ պարտատոմսերի սեփականատեր և պարբերաբար տոկոսագումարներ ստանալ արժեկտրոնի տեսքով:',
-    link: '/xnayoxakan-hashiv',
+    link: '/partatomser',
   },
-
-   {
+  {
     id: 5,
     image: 'https://ameriabank.am/Portals/0/Images/deposit/deposit-illustration.png',
     title: 'Ամերիա Մանկական ավանդ',
     text: 'Սա ժամկետային ավանդատեսակ է, որի պայմանագրի գործողության ժամկետում դու չես կարող ավելացնել կամ նվազեցնել ավանդի գումարը կամ փոխարկել ավանդը մեկ արժույթից մեկ այլ արժույթի:',
-    link: '/xnayoxakan-hashiv',
+    link: '/mankakan-avand',
   },
 ];
+
+/* ---------- Ներքին կոմպոնենտներ ---------- */
 
 function SavingCard({ image, title, text, link }) {
   return (
@@ -62,6 +63,44 @@ function SavingCard({ image, title, text, link }) {
     </article>
   );
 }
+
+function OnlineDeposit() {
+  return (
+    <section className="online-deposit">
+      <div className="online-deposit__card">
+        <div className="online-deposit__image">
+          <img src={GIRL_IMG} alt="Օնլայն ավանդ" />
+        </div>
+
+        <div className="online-deposit__content">
+          <h2 className="online-deposit__title">Օնլայն ավանդ</h2>
+
+          <p className="online-deposit__text">
+            Մի քանի պարզ քայլով մի քանի րոպեում բացիր ավանդային հաշիվ
+            Ամերիայում օնլայն:
+          </p>
+
+          <div className="online-deposit__actions">
+            <a
+              href="/myameria"
+              className="online-deposit__btn online-deposit__btn--primary"
+            >
+              MyAmeria
+            </a>
+            <a
+              href="/become-client"
+              className="online-deposit__btn online-deposit__btn--outline"
+            >
+              Դառնալ հաճախորդ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------- Էջ ---------- */
 
 export default function Xnayoxutyuner() {
   return (
@@ -95,6 +134,9 @@ export default function Xnayoxutyuner() {
           ))}
         </div>
       </section>
+
+      {/* Օնլայն ավանդ */}
+      <OnlineDeposit />
     </>
   );
 }
