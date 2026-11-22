@@ -2,7 +2,7 @@ import './Xnayoxutyuner.css';
 
 const IMAGES = {
   hero: 'https://ameriabank.am/Portals/0/Images/internal-pages/savings-banner.png',
-  girl: 'https://your-url.com/girl-phone.png',
+  girl: 'https://ameriabank.am/Portals/0/Images/New-home/cta2.png',
 };
 const OPTIONS = [
   {
