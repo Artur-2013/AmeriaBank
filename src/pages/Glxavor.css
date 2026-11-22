@@ -467,3 +467,78 @@
 }
 .glxavor-page a.gl-offer__btn:hover { background: #1d1d1b; border-color: #1d1d1b; color: #fff; }
 .glxavor-page a.gl-offer__btn:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
+/* Տարադրամի փոխարժեք + հաշվիչ */
+.gl-fx {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 40px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.gl-fx h2 { font-size: 34px; font-weight: 600; margin: 0 0 12px; }
+
+.gl-fx__sub { font-size: 16px; margin: 0 0 16px; }
+.glxavor-page .gl-fx__sub a { color: #78be20; }
+.glxavor-page .gl-fx__sub a:hover { text-decoration: underline; }
+
+.gl-fx__radios {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0 8px;
+}
+.gl-fx__radios--center { justify-content: center; margin-top: 0; }
+.gl-fx__radios label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.gl-fx__radios input { accent-color: #78be20; margin: 0; }
+
+/* Աղյուսակ */
+.gl-fx__table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.gl-fx__table th { font-weight: 400; padding: 10px 14px; text-align: right; }
+.gl-fx__table thead tr:first-child th { text-align: center; font-size: 16px; }
+.gl-fx__table tbody td {
+  padding: 14px;
+  text-align: right;
+  border-top: 1px solid #e5e7eb;
+}
+.gl-fx__table tbody td:first-child { text-align: center; }
+.gl-fx__table tbody td:nth-child(3) { border-right: 1px solid #e5e7eb; }
+.gl-fx__table tbody td:nth-child(5) { border-left: 1px solid #e5e7eb; }
+
+.gl-fx__empty { padding: 24px 0; text-align: center; color: #6b7280; }
+
+.glxavor-page .gl-fx__note {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* Հաշվիչ */
+.gl-fx__label { display: block; margin: 20px 0 8px; font-size: 18px; font-weight: 500; }
+.gl-fx__row { display: flex; gap: 12px; }
+
+.gl-fx__input,
+.gl-fx__select {
+  height: 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #1d1d1b;
+}
+.gl-fx__input { flex: 1; min-width: 0; padding: 0 12px; }
+.gl-fx__select { width: 94px; padding: 0 8px; color: #6b7280; }
+.gl-fx__input:focus,
+.gl-fx__select:focus { outline: 2px solid #78be20; outline-offset: 1px; }
+
+@media (max-width: 900px) {
+  .gl-fx { grid-template-columns: 1fr; }
+  .gl-fx__table { font-size: 13px; }
+  .gl-fx__table th, .gl-fx__table tbody td { padding: 10px 6px; }
+}
