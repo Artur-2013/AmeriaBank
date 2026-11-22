@@ -143,7 +143,10 @@ export default function Xnayoxutyuner() {
           </div>
 
           <div className="xnayoxutyuner-image">
-            <img src={IMAGES.hero} alt="Խնայողություններ" />
+            <img
+  src={IMAGES.hero}
+  alt="Մայրիկն ու երեխան՝ խնայողությունների բաժնի պաստառ"
+/>
           </div>
         </div>
       </section>
