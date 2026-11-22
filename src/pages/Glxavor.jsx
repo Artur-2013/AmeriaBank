@@ -167,6 +167,25 @@ export default function Glxavor() {
       <div className="gl-links">
   <div className="gl-container">
     <h2>Օգտակար հղումներ</h2>
+
+    <div className="gl-links__grid">
+      <a href="#" className="gl-link-card">
+        <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="4" y="9" width="32" height="22" rx="3" />
+          <path d="M4 17h32M9 25h8" />
+        </svg>
+        <span className="gl-link-card__title">Քարտեր</span>
+      </a>
+
+      <a href="#" className="gl-link-card">
+        <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="4" y="5" width="14" height="12" rx="2" />
+          <rect x="22" y="23" width="14" height="12" rx="2" />
+          <path d="M26 11h8m0 0-3-3m3 3-3 3M14 29H6m0 0 3-3m-3 3 3 3" />
+        </svg>
+        <span className="gl-link-card__title">Փոխանցումներ</span>
+      </a>
+    </div>
   </div>
 </div>
     </section>

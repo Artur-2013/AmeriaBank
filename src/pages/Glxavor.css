@@ -149,3 +149,39 @@
   font-weight: 600;
   margin: 0 0 32px;
 }
+.gl-links__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+}
+
+.glxavor-page .gl-link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 122px;
+  padding: 24px 20px;
+  background: #fff;
+  border-radius: 10px;
+  color: #1d1d1b;
+  text-decoration: none;
+  transition: box-shadow .2s;
+}
+.glxavor-page .gl-link-card:hover { box-shadow: 0 6px 20px rgba(0, 0, 0, .08); }
+.glxavor-page .gl-link-card:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .gl-links__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .gl-links__grid { grid-template-columns: 1fr; }
+}
+.gl-link-card__icon {
+  width: 40px;
+  height: 40px;
+  color: #86c34a;
+}
+.gl-link-card__title {
+  font-size: 18px;
+  font-weight: 700;
+}   
