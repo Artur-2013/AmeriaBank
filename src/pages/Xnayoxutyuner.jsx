@@ -191,6 +191,31 @@ function OnlineDeposit() {
   );
 }
 
+function ServiceCard({ title, Icon, text, link }) {
+  return (
+    <article className="service-card">
+      <div className="service-card__body">
+        <div className="service-card__head">
+          <h3 className="service-card__title">{title}</h3>
+          <span className="service-card__icon">
+            <Icon />
+          </span>
+        </div>
+        <p className="service-card__text">{text}</p>
+      </div>
+
+      <a
+        href={link}
+        className="service-card__footer"
+        aria-label={`Իմանալ ավելին՝ ${title}`}
+      >
+        Իմանալ ավելին
+        <ArrowIcon size={22} />
+      </a>
+    </article>
+  );
+}
+
 /* ---------- Էջ ---------- */
 
 export default function Xnayoxutyuner() {
