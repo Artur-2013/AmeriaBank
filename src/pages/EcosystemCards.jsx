@@ -61,6 +61,36 @@ const CARDS_DATA = [
     primaryBtn: 'Դիմել օնլայն',
     secondaryBtn: 'Իմանալ ավելին',
   },
+  {
+    id: 'mypay',
+    image:
+      'https://ameriabank.am/Portals/0/Images/campaigns/mycampaigns/pay.png',
+    alt: 'MyPay',
+    description:
+      'Գնելու և մաս-մաս վճարելու քո օնլայն գործիքը',
+    primaryBtn: 'Դիմել հիմա',
+    secondaryBtn: 'Իմանալ ավելին',
+  },
+  {
+    id: 'myeventhub',
+    image:
+      'https://ameriabank.am/Portals/0/Images/campaigns/mycampaigns/myeventhub.png',
+    alt: 'MyEventHub',
+    description:
+      'Քո սիրելի միջոցառումներին և փորձառություններին միանալու օնլայն հարթակը',
+    primaryBtn: 'Գնել տոմս',
+    secondaryBtn: 'Իմանալ ավելին',
+  },
+  {
+    id: 'mytour',
+    image:
+      'https://ameriabank.am/Portals/0/Images/campaigns/mycampaigns/mytour.png',
+    alt: 'MyTour',
+    description:
+      'Ուղևորությունդ պլանավորելու քո օնլայն հարթակը',
+    primaryBtn: 'Ամրագրել օնլայն',
+    secondaryBtn: 'Իմանալ ավելին',
+  },
 ];
 
 export default function EcosystemCards() {
