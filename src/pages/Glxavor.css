@@ -95,8 +95,8 @@
 }
 .gl-promo--green { background: #86bd56; }
 
-.gl-promo h2 { font-size: 20px; font-weight: 700; margin: 0; }
-
+.gl-promo h2 { font-size: 20px; font-weight: 700; margin: 0 0 32px; }
+.gl-promo p { font-size: 15px; line-height: 1.5; margin: 0; max-width: 260px; }
 @media (max-width: 900px) {
   .gl-promos { grid-template-columns: 1fr; }
 }
