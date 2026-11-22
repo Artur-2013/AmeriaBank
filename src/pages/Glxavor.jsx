@@ -185,6 +185,17 @@ export default function Glxavor() {
         </svg>
         <span className="gl-link-card__title">Փոխանցումներ</span>
       </a>
+      <a href="#" className="gl-link-card">
+  <svg className="gl-link-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M15 5h10l-3 6h-4z" />
+    <path d="M18 11c-6 3-10 8-10 15 0 5 4 8 12 8s12-3 12-8c0-7-4-12-10-15" />
+    <circle cx="16" cy="24" r="1.3" />
+    <circle cx="24" cy="30" r="1.3" />
+    <path d="M25 23l-10 8" />
+  </svg>
+  <span className="gl-link-card__title">Օնլայն վարկեր</span>
+</a>
+
     </div>
   </div>
 </div>
