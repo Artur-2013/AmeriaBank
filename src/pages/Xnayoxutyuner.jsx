@@ -120,7 +120,7 @@ export default function Xnayoxutyuner() {
           </div>
 
           <div className="xnayoxutyuner-image">
-            <img src={HERO_IMG} alt="Խնայողություններ" />
+            <img src={IMAGES.hero} alt="Խնայողություններ" />
           </div>
         </div>
       </section>
