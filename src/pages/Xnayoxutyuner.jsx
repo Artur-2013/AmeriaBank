@@ -4,6 +4,23 @@ const IMAGES = {
   hero: 'https://ameriabank.am/Portals/0/Images/internal-pages/savings-banner.png',
   girl: 'https://ameriabank.am/Portals/0/Images/New-home/cta2.png',
 };
+function ArrowIcon({ size = 18 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M5 12h14" />
+      <path d="M13 6l6 6-6 6" />
+    </svg>
+  );
+}
 const OPTIONS = [
   {
     id: 1,
