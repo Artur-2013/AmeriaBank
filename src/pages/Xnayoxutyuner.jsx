@@ -1,7 +1,7 @@
 import './Xnayoxutyuner.css';
 
 const HERO_IMG = 'https://ameriabank.am/Portals/0/Images/internal-pages/savings-banner.png';
-const GIRL_IMG = 'https://your-url.com/girl-phone.png'; // այստեղ դիր աղջկա նկարի URL-ը
+const GIRL_IMG = 'https://ameriabank.am/Portals/0/Images/New-home/cta2.png'; // այստեղ դիր աղջկա նկարի URL-ը
 
 const OPTIONS = [
   {
