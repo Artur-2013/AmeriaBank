@@ -149,6 +149,7 @@
   font-weight: 600;
   margin: 0 0 32px;
 }
+
 .gl-links__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -170,12 +171,6 @@
 .glxavor-page .gl-link-card:hover { box-shadow: 0 6px 20px rgba(0, 0, 0, .08); }
 .glxavor-page .gl-link-card:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
 
-@media (max-width: 900px) {
-  .gl-links__grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 480px) {
-  .gl-links__grid { grid-template-columns: 1fr; }
-}
 .gl-link-card__icon {
   width: 40px;
   height: 40px;
@@ -184,21 +179,53 @@
 .gl-link-card__title {
   font-size: 18px;
   font-weight: 700;
-} 
+}
+
+@media (max-width: 900px) {
+  .gl-links__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .gl-links__grid { grid-template-columns: 1fr; }
+}
+/* Ամերիան առաջինն է */
+.gl-feature {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.gl-feature__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  padding: 12px 12px 12px 56px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+}
+
+/* Տեքստ */
 .gl-feature__text { max-width: 620px; }
-.gl-feature__text h2 { margin: 0 0 12px; }
+.gl-feature__text h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
 .gl-feature__text p {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
   margin: 0;
-}.gl-feature__actions {
+}
+
+/* Կոճակներ */
+.gl-feature__actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 16px;
 }
-
 .glxavor-page .gl-feature__btn {
   display: inline-block;
   padding: 12px 20px;
@@ -208,30 +235,22 @@
   text-decoration: none;
   transition: background .2s, color .2s;
 }
-.glxavor-page .gl-feature__btn--green {
-  background: #6fbe3f;
-  border: 1px solid #6fbe3f;
-  color: #fff;
+.glxavor-page a.gl-feature__btn--green {
+  background-color: #6fbe3f !important;
+  border: 1px solid #6fbe3f !important;
+  color: #fff !important;
 }
-.glxavor-page .gl-feature__btn--green:hover { background: #5aa02f; border-color: #5aa02f; }
-
-.glxavor-page .gl-feature__btn--ghost {
-  background: #fff;
-  border: 1px solid #c9ccd1;
-  color: #1d1d1b;
+.glxavor-page a.gl-feature__btn--green:hover {
+  background-color: #5aa02f !important;
+  border-color: #5aa02f !important;
 }
-.glxavor-page .gl-feature__btn--ghost:hover { background: #1d1d1b; border-color: #1d1d1b; color: #fff; }
-
-.glxavor-page .gl-feature__btn:focus-visible { outline: 3px solid #1d1d1b; outline-offset: 3px; }
-.gl-feature__img {
-  align-self: stretch;
-  width: 390px;
-  margin-left: auto;
-  object-fit: cover;
-  border-radius: 4px;
+.glxavor-page a.gl-feature__btn--ghost {
+  background-color: #fff !important;
+  border: 1px solid #c9ccd1 !important;
+  color: #1d1d1b !important;
 }
-
-@media (max-width: 900px) {
-  .gl-feature__card { flex-direction: column; align-items: flex-start; padding: 32px 20px 12px; }
-  .gl-feature__img { width: 100%; height: 220px; margin: 24px 0 0; }
+.glxavor-page a.gl-feature__btn--ghost:hover {
+  background-color: #1d1d1b !important;
+  border-color: #1d1d1b !important;
+  color: #fff !important;
 }

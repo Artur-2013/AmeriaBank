@@ -224,7 +224,7 @@ export default function Glxavor() {
   </div>
   <img
     className="gl-feature__img"
-    src="/images/amerian-first.png"
+    src="https://ameriabank.am/Portals/0/Images/generation/gen-a-23/special.jpg"
     alt=""
     onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
   />
