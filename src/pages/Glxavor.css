@@ -132,3 +132,4 @@
 @media (max-width: 900px) {
   .gl-promos { grid-template-columns: 1fr; }
 }
+.gl-promo--blue { background: linear-gradient(90deg, #3a7fbf, #4a9fdc); }   

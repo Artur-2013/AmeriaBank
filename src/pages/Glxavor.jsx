@@ -151,6 +151,9 @@ export default function Glxavor() {
       alt=""
     />
   </div>
+  <div className="gl-promo gl-promo--blue">
+  <h2>Stop գործիքներ</h2>
+</div>
 </div>
     </section>
   );
