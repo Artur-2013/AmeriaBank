@@ -77,9 +77,13 @@ function SavingCard({ image, title, text, link }) {
 
       <p className="saving-card__text">{text}</p>
 
-      <a href={link} className="saving-card__btn">
-        Իմանալ ավելին
-      </a>
+      <a
+  href={link}
+  className="saving-card__btn"
+  aria-label={`Իմանալ ավելին՝ ${title}`}
+>
+  Իմանալ ավելին
+</a>
     </article>
   );
 }
