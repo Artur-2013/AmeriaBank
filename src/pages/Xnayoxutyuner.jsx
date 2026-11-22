@@ -256,6 +256,14 @@ export default function Xnayoxutyuner() {
 
       {/* Օնլայն ավանդ */}
       <OnlineDeposit />
-    </>
-  );
+
+      {/* Ծառայություններ */}
+      <section className="services">
+        <div className="services__grid">
+          {SERVICES.map((item) => (
+            <ServiceCard key={item.id} {...item} />
+          ))}
+        </div>
+      </section>
+    </>);
 }
