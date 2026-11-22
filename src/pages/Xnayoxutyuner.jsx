@@ -65,7 +65,7 @@ function SavingCard({ image, title, text, link }) {
   return (
     <article className="saving-card">
       <div className="saving-card__image">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
 
       <a href={link} className="saving-card__title">
