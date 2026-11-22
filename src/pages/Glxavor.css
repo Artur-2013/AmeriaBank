@@ -276,3 +276,17 @@
   font-weight: 600;
   line-height: 1.2;
 }
+.gl-showcase__lead {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}
+.gl-showcase__text {
+  max-width: 470px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}

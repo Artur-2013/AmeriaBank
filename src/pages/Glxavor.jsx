@@ -232,6 +232,10 @@ export default function Glxavor() {
       <div className="gl-showcase">
         <div className="gl-showcase__inner">
           <h2>MyHome</h2>
+          <p className="gl-showcase__lead">Տուն գնելը երբեք այսքան հեշտ չի եղել</p>
+          <p className="gl-showcase__text">
+            Ընտրիր քո նոր բնակարանը, ստացիր վարկային հայտի պատասխանն օնլայն մի քանի րոպեում, այցելիր նոտարական գրասենյակ և ստորագրիր...
+          </p>
         </div>
       </div>
     </section>
