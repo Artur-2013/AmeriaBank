@@ -15,13 +15,13 @@ export default function App() {
       <Header />
       <main className="app-content">
         <Glxavor />
-        <Cards />
+        {/* <Cards />
         <Hashivner />
         <Login />
         <Poxancumner />
         <Tvayin />
         <Varker />
-        <Xnayoxutyuner />
+        <Xnayoxutyuner /> */}
       </main>
       <Footer />
     </div>
