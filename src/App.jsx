@@ -1,35 +1,32 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Glxavor from './pages/Glxavor';
-import Cards from './pages/Cards';
-import Hashivner from './pages/Hashivner';
-import Login from './pages/Login';
-import Poxancumner from './pages/Poxancumner';
-import Tvayin from './pages/Tvayin';
-import Varker from './pages/Varker';
-import Xnayoxutyuner from './pages/Xnayoxutyuner';
+import Header1 from "./components/header/header1";
+import "./App.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Header />
-        <main className="app-content">
-          {/*<Glxavor />
-          <Cards />
-          <Hashivner />
-          <Login />
-          <Poxancumner />
-          <Tvayin />
-          <Varker /> */}
-          <Routes>
-            <Route path="/" element={<Xnayoxutyuner />} />
-            <Route path="/tvayin" element={<Tvayin />} />
-          </Routes>
-        </main>
-        <Footer />
+    <>
+      <div className="top-wrapper">
+        <Header1 />
+        <Header2 />
       </div>
-    </BrowserRouter>
+      <div className="main-header-wrapper">
+        <Bank1 />
+        <Bank2 />
+      </div>
+      <Bank3 />
+      <Bank4 />
+      <Bank5 />
+      <Bank6 />
+      <Bank7 />
+      <Bank8 />
+      <div className="info-tiles-grid">
+        <Bank9 />
+        <Bank10 />
+        <Bank11 />
+        <Bank12 />
+        <Bank13 />
+        <Bank14 />
+      </div>
+      <Bank15 />
+    </>
   );
 }
