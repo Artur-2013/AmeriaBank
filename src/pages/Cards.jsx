@@ -528,6 +528,107 @@ export default function Cards() {
               />
             </div>
           </div>
+
+          <div className="cards-terms-section">
+            <h2 className="cards-terms-title">Պայմաններ ու սակագներ</h2>
+
+            <nav className="cards-terms-tabs">
+              <a href="#terms-faq" className="cards-terms-tab active">Հարց ու պատասխան</a>
+              <a href="#terms-debit" className="cards-terms-tab">Դեբետային քարտերի սակագներ</a>
+              <a href="#terms-credit" className="cards-terms-tab">Կրեդիտային քարտերի սակագներ</a>
+              <a href="#terms-extra" className="cards-terms-tab">Լրացուցիչ տեղեկատվություն</a>
+              <a href="#terms-restricted" className="cards-terms-tab">Սահմանափակման ենթակա երկրներ</a>
+              <a href="#terms-debit-summary" className="cards-terms-tab">Դեբետային քարտերի ամփոփագիր</a>
+              <a href="#terms-credit-summary" className="cards-terms-tab">Կրեդիտային քարտերի ամփոփագիր</a>
+              <a href="#terms-previous" className="cards-terms-tab">Նախկին պայմաններ</a>
+            </nav>
+
+            <div className="cards-faq-list">
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ արժույթով են Ամերիաբանկի քարտերը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ինչպե՞ս կարող եմ քարտ ստանալ:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ է վարկային քարտը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ տեսակի քարտ է Visa Digital-ը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ գործարքներ կարելի է կատարել Visa Digital քարտով:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ առավելություն ունի թվային քարտը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ինչպե՞ս կարող եմ պատվիրել Visa Digital քարտ:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ անել, եթե չես ստացել CVV կոդը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Ի՞նչ անել, եթե մոռացել ես CVV կոդը, ֆորմատավորել կամ կորցրել ես քո սմարթֆոնը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Անհրաժե՞շտ է արդյոք ակտիվացնել Visa Digital քարտը:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Visa Digital քարտն ունի՞ PIN կոդ:</span>
+                </button>
+              </div>
+
+              <div className="cards-faq-item">
+                <button type="button" className="cards-faq-question">
+                  <span className="cards-faq-icon">+</span>
+                  <span className="cards-faq-text">Visa Digital քարտից հնարավո՞ր է կանխիկացում կատարել:</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
