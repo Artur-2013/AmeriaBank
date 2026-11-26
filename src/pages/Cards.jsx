@@ -460,6 +460,31 @@ export default function Cards() {
               *** 01.07.2023թ-ից Arca Carrefour Smile քարտերի վրա տարածվում են նույն պայմանները, ինչ Arca Classic քարտերի վրա, իսկ քարտերը գործելու են մինչև քարտի ժամկետի ավարտը:
             </p>
           </div>
+
+          <div className="cards-features-grid">
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">Ապահով և անվտանգ</h3>
+              <p className="cards-feature-desc">
+                Ամերիաբանկի քարտերով անկանխիկ գործարքներն ապահով են և անվտանգ: Մենք միշտ քո կողքին ենք և երաշխավորում ենք քո միջոցների և տվյալների պատշաճ անվտանգությունը1:
+              </p>
+              <a href="#safe-and-secure" className="cards-feature-link">Իմանալ ավելին</a>
+            </div>
+
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">Հաշվի կառավարում՝ առանց Բանկ գալու</h3>
+              <p className="cards-feature-desc">
+                MyAmeria օնլայն/ Մոբայլ բանկինգի միջոցով կարող ես կատարել փոխանցումներ, վճարումներ, մարել քո վարկերը, ստուգել հաշիվդ և շատ ավելին:
+              </p>
+              <a href="#account-management" className="cards-feature-link">Իմանալ ավելին</a>
+            </div>
+
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">PIN կոդի ինքնուրույն սահմանում</h3>
+              <p className="cards-feature-desc">
+                Եթե ուզում ես հեշտությամբ մտապահել քո քարտի PIN կոդը, ինքնուրույն սահմանի՛ր այն բանկոմատի միջոցով: Եթե այն հասանելի է դարձել երրորդ անձանց, կամ նման կասկած ունես, անվտանգություն ապահովելու համար կարող ես փոխել այն:
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
