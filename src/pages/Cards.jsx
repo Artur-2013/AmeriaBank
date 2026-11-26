@@ -113,6 +113,56 @@ export default function Cards() {
               <div className="card-item-price">Անվճար</div>
             </div>
           </div>
+
+          <div className="card-item">
+            <div className="card-item-main">
+              <div className="card-item-header">
+                <h3 className="card-item-title">Visa Classic Digital</h3>
+                <span className="card-item-network card-item-network--visa">VISA</span>
+              </div>
+
+              <p className="card-item-desc">
+                Visa միջազգային վճարային համակարգի վիրտուալ քարտ է, որը հնարավոր է պատվիրել MyAmeria համակարգի միջոցով, և որի միջոցով հնարավոր է իրականացնել անկանխիկ քարտային գործարքներ և՛ ՀՀ-ում, և՛ արտերկրում։ Քարտը հասանելի է լինում հայտը MyAmeria համակարգի միջոցով ներկայացնելուց մեկ աշխատանքային օրվա ընթացքում։
+              </p>
+
+              <div className="card-item-specs">
+                <div className="card-spec">
+                  <div className="card-spec-value">4 տարի</div>
+                  <div className="card-spec-label">Գործողության ժամկետ</div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">Կանխիկացում</div>
+                  <div className="card-spec-label">միայն MyAmeria-ով</div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">Արժույթ</div>
+                  <div className="card-spec-label">ՀՀ դրամով, ԱՄՆ դոլարով, Եվրոյով</div>
+                </div>
+              </div>
+
+              <div className="card-item-actions">
+                <a href="#order-online" className="card-btn-primary">Պատվիրիր օնլայն</a>
+                <a href="#learn-more-visa-digital" className="card-btn-secondary">Իմացիր ավելին</a>
+              </div>
+            </div>
+
+            <div className="card-item-side">
+              <div className="card-visual-placeholder card-visual-placeholder--digital">
+                <div className="card-visual-top">
+                  <span className="card-visual-logo">Λ AMERIABANK</span>
+                </div>
+                <div className="card-visual-middle">
+                  <span></span>
+                  <span className="card-visual-tagline">bank about you</span>
+                </div>
+                <div className="card-visual-bottom">
+                  <span className="card-visual-brand card-visual-brand--visa">VISA</span>
+                </div>
+              </div>
+
+              <div className="card-item-price">տարեկան 1,000 ՀՀ դրամ</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
