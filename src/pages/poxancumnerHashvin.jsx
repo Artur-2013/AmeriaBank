@@ -1,23 +1,64 @@
 import "./poxancumnerHashvin.css";
-const girl="https://ameriabank.am/Portals/0/Images/internal-pages/transfer-to-account.png";
 
 function PoxancumnerHashvin() {
   return (
-    <section className="ph-hero">
-      <button className="ph-side-tab">Թողնել կարծիք</button>
+    <>
+      {/* 1. Հերոս հատված */}
+      <section className="ph-hero">
+        <button className="ph-side-tab">Թողնել կարծիք</button>
 
-      <div className="ph-text">
-        <h1>Փոխանցում հաշվին</h1>
-        <p>Մեզ հետ աշխարհն այնքան մոտ է</p>
-      </div>
+        <div className="ph-text">
+          <h1>Փոխանցում հաշվին</h1>
+          <p>Մեզ հետ աշխարհն այնքան մոտ է</p>
+        </div>
 
-      <img className="ph-image" src={girl} alt="Փոխանցում հաշվին" />
+        <img
+          className="ph-image"
+          src="https://ameriabank.am/Portals/0/Images/internal-pages/transfer-to-account.png"
+          alt="Փոխանցում հաշվին"
+        />
 
-      <div className="ph-chat">
-        <div className="ph-chat-bubble">Հարցեր ունե՞ս</div>
-        <button className="ph-chat-btn">💬</button>
-      </div>
-    </section>
+        <div className="ph-chat">
+          <div className="ph-chat-bubble">Հարցեր ունե՞ս</div>
+          <button className="ph-chat-btn">💬</button>
+        </div>
+      </section>
+
+      {/* 2. Տեքստի հատված */}
+      <section className="ph-content">
+        <div className="ph-main">
+          <h2>Փոխանցում հաշվին Հայաստանում</h2>
+
+          <p>
+            Քեզ անհրաժեշտ է կատարել փոխանցումներ վճարման հանձնարարագրերի հիման
+            վրա։ Ամերիաբանկի ցանկացած մասնաճյուղում, Օնլայն/Մոբայլ բանկինգ և
+            հեռախոսային բանկինգ ծառայությունների միջոցով դու կարող ես անել
+            փոխանցումներ Հայաստանի և օտարերկրյա բանկեր ինչպես ՀՀ դրամով, այնպես
+            էլ արտարժույթով։
+          </p>
+          <p>
+            Վճարման հանձնարարագրերի հիման վրա փոխանցումները կատարվում են
+            յուրաքանչյուր բանկային օր՝ գործառնական ժամերին, իսկ «ՀՀ
+            Բանկ-հաճախորդ» համակարգի միջոցով ստացվող հանձնարարագրերը՝ ավտոմատ
+            կերպով։
+          </p>
+          <p>
+            Բանկային ծառայություններից օգտվելիս դու պետք է ունենաս ՀՀ դրամով
+            բանկային հաշիվ։
+          </p>
+          <p>
+            Հաշվի մասին ամբողջական տեղեկատվությունը տե՛ս{" "}
+            <a href="#">այստեղ</a>։
+          </p>
+        </div>
+
+        <aside className="ph-sidebar">
+          <a href="#" className="active">Փոխանցումներ հաշվին</a>
+          <a href="#">Փոխանցումներ հեռախոսահամարով</a>
+          <a href="#">Քարտից քարտ փոխանցումներ</a>
+        </aside>
+      </section>
+    </>
   );
 }
 

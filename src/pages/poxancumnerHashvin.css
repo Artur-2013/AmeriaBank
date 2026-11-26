@@ -1,3 +1,4 @@
+/* ---------- Հերոս ---------- */
 .ph-hero {
   position: relative;
   display: flex;
@@ -29,7 +30,6 @@
   margin-right: 120px;
 }
 
-/* ձախ նարնջագույն ուղղահայաց կոճակ */
 .ph-side-tab {
   position: absolute;
   left: 0;
@@ -46,7 +46,6 @@
   cursor: pointer;
 }
 
-/* ներքևի աջ chat */
 .ph-chat {
   position: fixed;
   right: 40px;
@@ -55,6 +54,7 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
+  z-index: 10;
 }
 
 .ph-chat-bubble {
@@ -74,4 +74,58 @@
   color: #fff;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* ---------- Տեքստի հատված ---------- */
+.ph-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px 70px 60px 70px;
+  background: #fff;
+}
+
+.ph-main {
+  flex: 1;
+  max-width: 800px;
+}
+
+.ph-main h2 {
+  margin: 0 0 30px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-main p {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.ph-main a {
+  color: #6cc24a;
+  text-decoration: none;
+}
+
+.ph-sidebar {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px;
+  background: #f6f7f8;
+}
+
+.ph-sidebar a {
+  color: #111;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.ph-sidebar a.active,
+.ph-sidebar a:hover {
+  color: #6cc24a;
 }
