@@ -10,6 +10,7 @@ import Tvayin from './pages/Tvayin';
 import Varker from './pages/Varker';
 import Xnayoxutyuner from './pages/Xnayoxutyuner';
 import Business from './pages/Business';
+import PoxancumnerHashvin from './pages/poxancumnerHashvin';
 
 export default function App() {
   return (
@@ -17,15 +18,18 @@ export default function App() {
       <div className="app">
         <Header />
         <main className="app-content">
-          {/*<Glxavor />
-          <Cards />
+          <Glxavor />
+          <PoxancumnerHashvin/>
+          {/*<Cards />
           <Hashivner />
           <Login />
           <Poxancumner />
           <Tvayin />
           <Varker /> */}
           <Routes>
-            <Route path="/" element={<Xnayoxutyuner />} />
+            <Route path="/" element={<Glxavor />} />
+            <Route path="/poxancumner-hashvin" element={<PoxancumnerHashvin />} />
+            <Route path="/xnayoxutyuner" element={<Xnayoxutyuner />} />
             <Route path="/tvayin" element={<Tvayin />} />
             <Route path="/business" element={<Business />} />
           </Routes>
