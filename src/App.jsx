@@ -9,6 +9,7 @@ import Poxancumner from './pages/Poxancumner';
 import Tvayin from './pages/Tvayin';
 import Varker from './pages/Varker';
 import Xnayoxutyuner from './pages/Xnayoxutyuner';
+import './App.css';
 
 export default function App() {
   return (
@@ -16,8 +17,8 @@ export default function App() {
       <div className="app">
         <Header />
         <main className="app-content">
-          {/*<Glxavor />
           <Cards />
+          {/*<Glxavor />
           <Hashivner />
           <Login />
           <Poxancumner />
