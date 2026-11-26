@@ -485,6 +485,32 @@ export default function Cards() {
               </p>
             </div>
           </div>
+
+          <div className="cards-features-grid">
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">Համատեղ քարտ քեզ և մտերիմներիդ համար</h3>
+              <p className="cards-feature-desc">
+                Դու կարող ես ձեռք բերել համատեղ քարտ քո մտերիմների հետ և միասին պլանավորվել ու կառավարել ձեր ծախսերը1:
+              </p>
+              <a href="#joint-card" className="cards-feature-link">Իմանալ ավելին</a>
+            </div>
+
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">USSD ծառայություն</h3>
+              <p className="cards-feature-desc">
+                Դու կարող ես օրվա ցանկացած ժամի, ցանկացած վայրում բլոկավորել քո քարտը, ստանալ տեղեկություններ քո հաշվի մնացորդի, հասանելի ծառայությունների, վերջին գործարքների վերաբերյալ նաև USSD հրահանգների միջոցով:
+              </p>
+              <a href="#ussd-service" className="cards-feature-link">Իմանալ ավելին</a>
+            </div>
+
+            <div className="cards-feature-col">
+              <h3 className="cards-feature-title">Բանկոմատների մեծ ցանց</h3>
+              <p className="cards-feature-desc">
+                Մեր բանկոմատների ցանցը պատրաստ է սպասարկել քեզ Հայաստանի բոլոր անկյուններում: Բանկոմատների միջոցով դու կարող ես ոչ միայն գումար կանխիկացնել, այլև կատարել կանխիկի ակնթարթային մուտքագրում, կոմունալ վճարումներ և այլ փոխանցումներ:
+              </p>
+              <a href="#atm-network" className="cards-feature-link">Մասնաճյուղերի ցանց</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
