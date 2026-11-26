@@ -629,6 +629,56 @@ export default function Cards() {
               </div>
             </div>
           </div>
+
+          <div className="cards-promo-grid">
+            <div className="cards-promo-card">
+              <div className="cards-promo-body">
+                <div className="cards-promo-top">
+                  <h3 className="cards-promo-title">Ուսանողական քարտ</h3>
+                  <span className="cards-promo-icon" aria-hidden="true">🎓</span>
+                </div>
+                <p className="cards-promo-desc">
+                  Visa Student քարտով սկսվում է քո բանկային լավագույն փորձառությունը: Այն քեզ հնարավորություն կտա տնօրինելու քո ֆինանսական միջոցները և կատարելու խնայողություններ:
+                </p>
+              </div>
+              <a href="#promo-student-card" className="cards-promo-footer">
+                <span>Իմանալ ավելին</span>
+                <span className="cards-promo-arrow">→</span>
+              </a>
+            </div>
+
+            <div className="cards-promo-card">
+              <div className="cards-promo-body">
+                <div className="cards-promo-top">
+                  <h3 className="cards-promo-title">MyAmeria օնլայն/մոբայլ բանկինգ</h3>
+                  <span className="cards-promo-icon" aria-hidden="true">📱</span>
+                </div>
+                <p className="cards-promo-desc">
+                  MyAmeria-ն մեր նոր օնլայն/մոբայլ բանկինգի համակարգն է, որը թույլ է տալիս բանկային հիմնական գործարքներն իրականացնել iOS, Android և Web հարթակներում առանց բանկ այցելելու:
+                </p>
+              </div>
+              <a href="#promo-myameria" className="cards-promo-footer">
+                <span>Իմանալ ավելին</span>
+                <span className="cards-promo-arrow">→</span>
+              </a>
+            </div>
+
+            <div className="cards-promo-card">
+              <div className="cards-promo-body">
+                <div className="cards-promo-top">
+                  <h3 className="cards-promo-title">Սմարթ հաշիվ</h3>
+                  <span className="cards-promo-icon" aria-hidden="true">💳</span>
+                </div>
+                <p className="cards-promo-desc">
+                  Բացիր հաշիվ Ամերիաբանկում՝ առանց բանկ այցելելու և ստացիր անվճար բանկային հաշիվ, վճարային քարտ և օնլայն/մոբայլ բանկինգ:
+                </p>
+              </div>
+              <a href="#promo-smart-account" className="cards-promo-footer">
+                <span>Իմանալ ավելին</span>
+                <span className="cards-promo-arrow">→</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
