@@ -24,7 +24,7 @@ export default function Cards() {
           </div>
           <div className="cards-hero-media">
             <img
-              src="https://ameriabank.am/Portals/0/Images/New-home/cards.png"
+              src=""
               alt="Վճարային քարտեր"
               className="cards-hero-img"
             />
@@ -47,6 +47,16 @@ export default function Cards() {
           <div className="cards-planet-graphic">
             <span className="cards-planet-badge-text">ՄՈԼՈՐԱ՞Կ ԹԵ ՊԼԱՍՏԻԿ</span>
           </div>
+        </div>
+      </div>
+
+      <div className="cards-tabs-section">
+        <div className="cards-tabs-inner">
+          <nav className="cards-tabs-nav">
+            <a href="#popular" className="cards-tab-link active">Ամենապահանջվածներ</a>
+            <a href="#debit" className="cards-tab-link">Դեբետային քարտեր</a>
+            <a href="#credit" className="cards-tab-link">Կրեդիտային քարտեր</a>
+          </nav>
         </div>
       </div>
     </section>
