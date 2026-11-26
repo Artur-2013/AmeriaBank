@@ -12,9 +12,9 @@ export default function Header() {
           <a href="#glxavor" className="ameria-segment ameria-segment--active">
             ԱՆՀԱՏՆԵՐԻՆ
           </a>
-          <a href="#glxavor" className="ameria-segment">
+          <Link to="http://localhost:5173/business" className="ameria-segment">
             ԲԻԶՆԵՍԻՆ
-          </a>
+         </Link>
           <a href="#glxavor" className="ameria-segment">
             ՆԵՐԴՐՈՒՄԱՅԻՆ
           </a>

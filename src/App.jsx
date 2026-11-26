@@ -9,6 +9,7 @@ import Poxancumner from './pages/Poxancumner';
 import Tvayin from './pages/Tvayin';
 import Varker from './pages/Varker';
 import Xnayoxutyuner from './pages/Xnayoxutyuner';
+import Business from './pages/Business';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Xnayoxutyuner />} />
             <Route path="/tvayin" element={<Tvayin />} />
+            <Route path="/business" element={<Business />} />
           </Routes>
         </main>
         <Footer />
