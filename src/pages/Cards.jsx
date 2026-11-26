@@ -511,6 +511,23 @@ export default function Cards() {
               <a href="#atm-network" className="cards-feature-link">Մասնաճյուղերի ցանց</a>
             </div>
           </div>
+
+          <div className="cards-cta-banner">
+            <div className="cards-cta-content">
+              <h2 className="cards-cta-title">Դեռ Ամերիաբանկի հաճախորդ չե՞ս</h2>
+              <p className="cards-cta-desc">
+                Բացի՛ր հաշիվ օնլայն, ստացիր անվճար հաշիվ, մեկ Visa Classic կամ MasterCard Standard քարտ և օնլայն/մոբայլ բանկինգ:
+              </p>
+              <a href="#apply-online" className="cards-cta-btn">Դիմիր օնլայն</a>
+            </div>
+            <div className="cards-cta-media">
+              <img
+                src=""
+                alt="Դեռ Ամերիաբանկի հաճախորդ չե՞ս"
+                className="cards-cta-img"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
