@@ -309,6 +309,83 @@ export default function Cards() {
               </div>
             </div>
           </div>
+
+          <div className="card-item">
+            <div className="card-item-main">
+              <div className="card-item-header">
+                <h3 className="card-item-title">Mastercard Rose Gold</h3>
+                <span className="card-item-network card-item-network--mc" aria-label="Mastercard">
+                  <span className="mc-circle mc-circle--red"></span>
+                  <span className="mc-circle mc-circle--orange"></span>
+                </span>
+              </div>
+
+              <p className="card-item-desc">
+                Պրեմիում դասի միջազգային քարտ է, որն առաջարկում է բազմաթիվ հատուկ առաջարկներ և զեղչեր ինչպես տեղական, այնպես էլ միջազգային ընկերությունների ծառայություններից օգտվելիս և անկանխիկ վճարումներ կատարելիս: Մանրամասներին կարող ես ծանոթանալ{' '}
+                <a href="#rose-gold-details" className="card-inline-link">հղմամբ</a>:
+              </p>
+
+              <div className="card-item-specs">
+                <div className="card-spec">
+                  <div className="card-spec-value">4 տարի</div>
+                  <div className="card-spec-label">Գործողության ժամկետ</div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">0%</div>
+                  <div className="card-spec-label">
+                    Քարտով կանխիկացում Բանկի
+                    <br />
+                    բանկոմատներում մինչև 500,000
+                    <br />
+                    ՀՀ դրամ/ամիս*
+                  </div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">1%</div>
+                  <div className="card-spec-label">
+                    Կանխիկացում այլ բանկի
+                    <br />
+                    բանկոմատներում
+                  </div>
+                </div>
+              </div>
+
+              <p className="card-item-footnote">
+                *Օրացուցային ամսվա ընթացքում Բանկի բանկոմատներում մինչև 500,000 ՀՀ դրամի կանխիկացման միջնորդավճարը 0% է, իսկ 500,000 ՀՀ դրամը գերազանցելու դեպքում` 0,5%:
+              </p>
+
+              <div className="card-item-actions">
+                <a href="#order-mc-rose-gold" className="card-btn-primary">Պատվիրիր օնլայն</a>
+              </div>
+            </div>
+
+            <div className="card-item-side">
+              <div className="card-visual-placeholder card-visual-placeholder--rose-gold">
+                <div className="card-visual-top">
+                  <span className="card-visual-logo">Λ AMERIABANK</span>
+                  <span className="card-visual-contactless">)))</span>
+                </div>
+                <div className="card-visual-middle">
+                  <span className="card-visual-chip"></span>
+                  <span className="card-visual-tagline">bank about you</span>
+                </div>
+                <div className="card-visual-bottom">
+                  <span className="card-visual-brand--mc" aria-hidden="true">
+                    <span className="mc-circle mc-circle--red"></span>
+                    <span className="mc-circle mc-circle--orange"></span>
+                  </span>
+                </div>
+              </div>
+
+              <div className="card-item-price-box">
+                <div className="card-item-price">2,000 ՀՀ դրամ ամսական</div>
+                <div className="card-item-price card-item-price--secondary">20,000 ՀՀ դրամ տարեկան</div>
+                <div className="card-item-price-note">
+                  MyAmeria համակարգով պատվիրելու դեպքում` 10,000 ՀՀ դրամ տարեկան
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
