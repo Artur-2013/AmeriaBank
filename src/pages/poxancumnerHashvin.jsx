@@ -227,6 +227,23 @@ function PoxancumnerHashvin() {
             <span className="ph-card-arrow">→</span>
           </a>
         </div>
+                <div className="ph-card">
+          <div className="ph-card-body">
+            <div className="ph-card-top">
+              <h3>Վճարային քարտեր</h3>
+              <span className="ph-card-icon">▭</span>
+            </div>
+            <p>
+              Պատվիրիր Ամերիայի վճարային քարտերը և ստացիր մի շարք
+              առավելություններ։
+            </p>
+          </div>
+
+          <a href="#" className="ph-card-footer">
+            <span>Իմանալ ավելին</span>
+            <span className="ph-card-arrow">→</span>
+          </a>
+        </div>
       </section>
     </>
   );
