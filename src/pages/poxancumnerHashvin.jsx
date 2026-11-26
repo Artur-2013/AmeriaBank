@@ -58,6 +58,25 @@ function PoxancumnerHashvin() {
           <a href="#">Քարտից քարտ փոխանցումներ</a>
         </aside>
       </section>
+            {/* 3. «Դեռ չունե՞ս հաշիվ» բլոկ */}
+      <section className="ph-promo-wrap">
+        <div className="ph-promo">
+          <div className="ph-promo-text">
+            <h2>Դեռ չունե՞ս հաշիվ Ամերիաբանկում</h2>
+            <p>
+              Բացիր հաշիվ օնլայն, ստացիր անվճար հաշիվ, մեկ Visa Classic կամ
+              MasterCard Standard քարտ և օնլայն/մոբայլ բանկինգ։
+            </p>
+            <button className="ph-promo-btn">Դիմիր օնլայն</button>
+          </div>
+
+          <img
+            className="ph-promo-img"
+            src="https://ameriabank.am/Portals/0/Images/New-home/cta2.png"
+            alt="Դիմիր օնլայն"
+          />
+        </div>
+      </section>
     </>
   );
 }
