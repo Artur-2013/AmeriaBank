@@ -282,3 +282,14 @@
 .ph-table tbody tr {
   background: #f6f7f8;
 }
+/* ---------- Ծանոթագրություններ ---------- */
+.ph-notes {
+  margin-bottom: 30px;
+}
+
+.ph-notes p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+}
