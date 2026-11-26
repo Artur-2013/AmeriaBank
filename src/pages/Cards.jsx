@@ -163,6 +163,76 @@ export default function Cards() {
               <div className="card-item-price">տարեկան 1,000 ՀՀ դրամ</div>
             </div>
           </div>
+
+          <div className="card-item">
+            <div className="card-item-main">
+              <div className="card-item-header">
+                <h3 className="card-item-title">Visa Classic</h3>
+                <span className="card-item-network card-item-network--visa">VISA</span>
+              </div>
+
+              <p className="card-item-desc">
+                Միջազգային վճարային քարտ է, որը հնարավոր է օգտագործել և՛ ՀՀ-ում, և՛ արտերկրում կանխիկ և անկանխիկ գործարքներ կատարելու համար:
+              </p>
+
+              <div className="card-item-specs">
+                <div className="card-spec">
+                  <div className="card-spec-value">4 տարի</div>
+                  <div className="card-spec-label">Գործողության ժամկետ</div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">0%</div>
+                  <div className="card-spec-label">
+                    Քարտով կանխիկացում Բանկի
+                    <br />
+                    բանկոմատներում մինչև 300,000
+                    <br />
+                    ՀՀ դրամ/ամիս*
+                  </div>
+                </div>
+                <div className="card-spec">
+                  <div className="card-spec-value">1%</div>
+                  <div className="card-spec-label">
+                    Կանխիկացում այլ բանկի
+                    <br />
+                    բանկոմատներում
+                  </div>
+                </div>
+              </div>
+
+              <p className="card-item-footnote">
+                *Օրացուցային ամսվա ընթացքում Բանկի բանկոմատներում մինչև 300,000 ՀՀ դրամի կանխիկացման միջնորդավճարը 0% է, իսկ 300,000 ՀՀ դրամը գերազանցելու դեպքում` 0,5%:
+              </p>
+
+              <div className="card-item-actions">
+                <a href="#order-visa-classic" className="card-btn-primary">Պատվիրիր օնլայն</a>
+                <a href="#become-client" className="card-btn-secondary">Դարձիր հաճախորդ</a>
+              </div>
+            </div>
+
+            <div className="card-item-side">
+              <div className="card-visual-placeholder">
+                <div className="card-visual-top">
+                  <span className="card-visual-logo">Λ AMERIABANK</span>
+                  <span className="card-visual-contactless">)))</span>
+                </div>
+                <div className="card-visual-middle">
+                  <span className="card-visual-chip"></span>
+                  <span className="card-visual-tagline">bank about you</span>
+                </div>
+                <div className="card-visual-bottom">
+                  <span className="card-visual-brand card-visual-brand--visa">VISA</span>
+                </div>
+              </div>
+
+              <div className="card-item-price-box">
+                <div className="card-item-price">տարեկան 5,000 ՀՀ դրամ</div>
+                <div className="card-item-price-note">
+                  MyAmeria համակարգով պատվիրելու դեպքում` 2,500 ՀՀ դրամ
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
