@@ -208,6 +208,26 @@ function PoxancumnerHashvin() {
         )}
         <hr className="ph-terms-line" />
       </section>
+            {/* 5. Քարտեր */}
+      <section className="ph-cards">
+        <div className="ph-card">
+          <div className="ph-card-body">
+            <div className="ph-card-top">
+              <h3>Հաշիվներ և փոխանցումներ</h3>
+              <span className="ph-card-icon">▤</span>
+            </div>
+            <p>
+              Հաշվի տարբեր տեսակներ՝ ընթացիկ, խնայողական և ավելին՝ քո առօրյա
+              բանկային կարիքները բավարարելու համար։
+            </p>
+          </div>
+
+          <a href="#" className="ph-card-footer">
+            <span>Իմանալ ավելին</span>
+            <span className="ph-card-arrow">→</span>
+          </a>
+        </div>
+      </section>
     </>
   );
 }

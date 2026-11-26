@@ -293,3 +293,81 @@
   line-height: 1.6;
   color: #222;
 }
+/* ---------- 5. Քարտեր ---------- */
+.ph-cards {
+  display: flex;
+  gap: 22px;
+  padding: 30px 70px 40px;
+  background: #fff;
+}
+
+.ph-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 396px;
+  min-height: 315px;
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.ph-card-body {
+  padding: 28px 24px 20px;
+}
+
+.ph-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.ph-card-top h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ph-card-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.ph-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px;
+  background: #e9f2fb;
+  color: #6cc24a;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ph-card-footer:hover {
+  background: #dcebf8;
+}
+
+.ph-card-arrow {
+  font-size: 18px;
+}
