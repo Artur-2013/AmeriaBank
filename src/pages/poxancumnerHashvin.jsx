@@ -244,6 +244,24 @@ function PoxancumnerHashvin() {
             <span className="ph-card-arrow">→</span>
           </a>
         </div>
+                <div className="ph-card">
+          <div className="ph-card-body">
+            <div className="ph-card-top">
+              <h3>Ավանդ «Ամերիա»</h3>
+              <span className="ph-card-icon">◍</span>
+            </div>
+            <p>
+              Եթե խնայողություններ կատարելիս նախընտրություն տաս «Ամերիա»
+              ավանդին, ինքդ կսահմանես ավանդի պայմանները, իսկ մենք կօգնենք
+              գտնել դրանց լավագույն համադրությունը։
+            </p>
+          </div>
+
+          <a href="#" className="ph-card-footer">
+            <span>Իմանալ ավելին</span>
+            <span className="ph-card-arrow">→</span>
+          </a>
+        </div>
       </section>
     </>
   );
