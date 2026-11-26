@@ -1,9 +1,30 @@
+import { useState } from "react";
 import "./poxancumnerHashvin.css";
 
+// Կանաչ շապիկով աղջկա նկարի հղումը կպցրու այստեղ
+const PROMO_IMG = "";
+
 function PoxancumnerHashvin() {
+  const [tab, setTab] = useState(0);
+
+  const tabs = [
+    {
+      title: "Վճարման հանձնարարականներ",
+      text: "Բանկը թղթային եղանակով և հեռակառավարման համակարգերով վճարման հանձնարարականները ընդունում և փոխանցման ենթակա գումարը հաշվից ելքագրում է համաձայն ստորև սահմանված ժամանակացույցի՝ հաճախորդի հաշվին փոխանցման ենթակա գումարի փաստացի առկայության պարագայում։",
+    },
+    {
+      title: "Օգտակար հղումներ",
+      text: "Այստեղ կլինեն օգտակար հղումները։",
+    },
+    {
+      title: "Քեզ կհետաքրքրի նաև",
+      text: "Այստեղ կլինեն առաջարկվող ծառայությունները։",
+    },
+  ];
+
   return (
     <>
-      {/* 1. Հերոս հատված */}
+      {/* 1. Հերոս */}
       <section className="ph-hero">
         <button className="ph-side-tab">Թողնել կարծիք</button>
 
@@ -24,11 +45,10 @@ function PoxancumnerHashvin() {
         </div>
       </section>
 
-      {/* 2. Տեքստի հատված */}
+      {/* 2. Տեքստ + կողմնային մենյու */}
       <section className="ph-content">
         <div className="ph-main">
           <h2>Փոխանցում հաշվին Հայաստանում</h2>
-
           <p>
             Քեզ անհրաժեշտ է կատարել փոխանցումներ վճարման հանձնարարագրերի հիման
             վրա։ Ամերիաբանկի ցանկացած մասնաճյուղում, Օնլայն/Մոբայլ բանկինգ և
@@ -58,7 +78,8 @@ function PoxancumnerHashvin() {
           <a href="#">Քարտից քարտ փոխանցումներ</a>
         </aside>
       </section>
-            {/* 3. «Դեռ չունե՞ս հաշիվ» բլոկ */}
+
+      {/* 3. Դեռ չունե՞ս հաշիվ */}
       <section className="ph-promo-wrap">
         <div className="ph-promo">
           <div className="ph-promo-text">
@@ -69,13 +90,74 @@ function PoxancumnerHashvin() {
             </p>
             <button className="ph-promo-btn">Դիմիր օնլայն</button>
           </div>
-
-          <img
-            className="ph-promo-img"
-            src="https://ameriabank.am/Portals/0/Images/New-home/cta2.png"
-            alt="Դիմիր օնլայն"
-          />
+          <img className="ph-promo-img" src={PROMO_IMG} alt="Դիմիր օնլայն" />
         </div>
+      </section>
+
+      {/* 4. Պայմաններ և սակագներ */}
+      <section className="ph-terms">
+        <h2>Պայմաններ և սակագներ</h2>
+
+        <div className="ph-tabs">
+          {tabs.map((t, i) => (
+            <button
+              key={i}
+              className={`ph-tab ${tab === i ? "active" : ""}`}
+              onClick={() => setTab(i)}
+            >
+              {t.title}
+            </button>
+          ))}
+        </div>
+
+        <p className="ph-terms-text">{tabs[tab].text}</p>
+
+        {/* Աղյուսակը երևում է միայն առաջին tab-ում */}
+        {tab === 0 && (
+          <div className="ph-table-wrap">
+            <table className="ph-table">
+              <thead>
+                <tr className="ph-table-group">
+                  <th colSpan={4}>
+                    Թղթային եղանակով ներկայացվող վճարման հանձնարարականներ
+                  </th>
+                  <th colSpan={4}>
+                    Ինտերնետ/ Մոբայլ-բանկինգ համակարգով, Հեռախոս – բանկ
+                    ծառայության միջոցով ներկայացվող վճարման հանձնարարականներ
+                    <div className="ph-table-note">
+                      (բացառությամբ ներբանկային փոխանցումների, որոնք փոխանցվում
+                      են ոչ ուշ, քան հաջորդ բանկային օրը)
+                    </div>
+                  </th>
+                </tr>
+                <tr className="ph-table-head">
+                  <th>Ընդունում</th>
+                  <th>Հաշվից ելքագրում</th>
+                  <th>Ընդունում</th>
+                  <th>Հաշվից ելքագրում</th>
+                  <th>Ընդունում</th>
+                  <th>Հաշվից ելքագրում</th>
+                  <th>Ընդունում</th>
+                  <th>Հաշվից ելքագրում</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Մինչև ժամը 16:00</td>
+                  <td>Նույն բանկային օրը</td>
+                  <td>Ժամը 16:00-ից հետո</td>
+                  <td>Հաջորդ բանկային օրը</td>
+                  <td>Մինչև ժամը 17:00</td>
+                  <td>Նույն բանկային օրը</td>
+                  <td>Ժամը 17:00-ից հետո</td>
+                  <td>Հաջորդ բանկային օրը</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        <hr className="ph-terms-line" />
       </section>
     </>
   );
