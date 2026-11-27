@@ -1,0 +1,117 @@
+.promo {
+  position: relative;
+  padding: 30px 64px 60px;
+  background: #fff;
+  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+}
+
+.promo__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 350px;
+  padding: 12px 58px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.promo__content {
+  max-width: 700px;
+}
+
+.promo__title {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.promo__text {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.promo__note {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-style: italic;
+  color: #444;
+}
+
+.promo__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.promo__btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.promo__btn--primary {
+  background: #72bf44;
+  color: #fff;
+  border: 1px solid #72bf44;
+}
+
+.promo__btn--primary:hover {
+  background: #62a838;
+}
+
+.promo__btn--outline {
+  background: #fff;
+  color: #222;
+  border: 1px solid #999;
+}
+
+.promo__btn--outline:hover {
+  color: #72bf44;
+  border-color: #72bf44;
+}
+
+.promo__image {
+  width: 390px;
+  height: 326px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* ---------- Սլաքներ ---------- */
+.promo__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.promo__arrow:hover {
+  background: #e6e6e6;
+}
+
+.promo__arrow--left {
+  left: 44px;
+}
+
+.promo__arrow--right {
+  right: 44px;
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const AMERIA_LOGO_URL =
@@ -11,9 +12,9 @@ export default function Header() {
           <a href="#glxavor" className="ameria-segment ameria-segment--active">
             ԱՆՀԱՏՆԵՐԻՆ
           </a>
-          <a href="#glxavor" className="ameria-segment">
+          <Link to="http://localhost:5173/business" className="ameria-segment">
             ԲԻԶՆԵՍԻՆ
-          </a>
+         </Link>
           <a href="#glxavor" className="ameria-segment">
             ՆԵՐԴՐՈՒՄԱՅԻՆ
           </a>
@@ -91,12 +92,12 @@ export default function Header() {
           <a href="#poxancumner" className="ameria-nav-link">
             Փոխանցումներ
           </a>
-          <a href="#xnayoxutyuner" className="ameria-nav-link">
+          <Link to="/" className="ameria-nav-link">
             Խնայողություններ
-          </a>
-          <a href="#tvayin" className="ameria-nav-link">
+          </Link>
+          <Link to="/tvayin" className="ameria-nav-link">
             Թվային
-          </a>
+          </Link>
         </nav>
 
         <a href="#login" className="ameria-online-btn">

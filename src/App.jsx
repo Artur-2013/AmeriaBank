@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Glxavor from './pages/Glxavor';
@@ -8,6 +9,7 @@ import Poxancumner from './pages/Poxancumner';
 import Tvayin from './pages/Tvayin';
 import Varker from './pages/Varker';
 import Xnayoxutyuner from './pages/Xnayoxutyuner';
+import Business from './pages/Business';
 
 export default function App() {
   return (

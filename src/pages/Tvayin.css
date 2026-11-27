@@ -1,0 +1,70 @@
+.tvayin-wrapper {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Վերևի բաններ */
+.tvayin-banner {
+  width: 100%;
+  height: 350px;
+  background-image: url('https://ameriabank.am/Portals/0/Images/campaigns/mycampaigns/digital-ameria-web.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #eef2f5;
+  display: flex;
+  align-items: center;
+}
+
+.tvayin-banner__content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.tvayin-banner__title {
+  margin: 0 0 12px;
+  font-size: 38px;
+  font-weight: 800;
+  color: #111418;
+  max-width: 480px;
+}
+
+.tvayin-banner__subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: #2d333b;
+  max-width: 440px;
+}
+
+/* Քարտերի հատված */
+.tvayin-cards-section {
+  width: 100%;
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.tvayin-cards-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .tvayin-banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .tvayin-banner__title {
+    font-size: 30px;
+  }
+
+  .tvayin-cards-row {
+    flex-direction: column;
+  }
+}
