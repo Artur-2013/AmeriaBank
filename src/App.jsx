@@ -13,25 +13,19 @@ import Business from './pages/Business';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Header />
-        <main className="app-content">
-          {/*<Glxavor />
-          <Cards />
-          <Hashivner />
-          <Login />
-          <Poxancumner />
-          <Tvayin />
-          <Varker /> */}
-          <Routes>
-            <Route path="/" element={<Xnayoxutyuner />} />
-            <Route path="/tvayin" element={<Tvayin />} />
-            <Route path="/business" element={<Business />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="app">
+      <Header />
+      <main className="app-content">
+        <Glxavor />
+        {/* <Cards />
+        <Hashivner />
+        <Login />
+        <Poxancumner />
+        <Tvayin />
+        <Varker />
+        <Xnayoxutyuner /> */}
+      </main>
+      <Footer />
+    </div>
   );
 }
