@@ -10,22 +10,32 @@ import Tvayin from './pages/Tvayin';
 import Varker from './pages/Varker';
 import Xnayoxutyuner from './pages/Xnayoxutyuner';
 import Business from './pages/Business';
+import PoxancumnerHashvin from './pages/poxancumnerHashvin';
 
 export default function App() {
   return (
-    <div className="app">
-      <Header />
-      <main className="app-content">
-        <Glxavor />
-        {/* <Cards />
-        <Hashivner />
-        <Login />
-        <Poxancumner />
-        <Tvayin />
-        <Varker />
-        <Xnayoxutyuner /> */}
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <main className="app-content">
+          <Glxavor />
+          <PoxancumnerHashvin/>
+          {/*<Cards />
+          <Hashivner />
+          <Login />
+          <Poxancumner />
+          <Tvayin />
+          <Varker /> */}
+          <Routes>
+            <Route path="/" element={<Glxavor />} />
+            <Route path="/poxancumner-hashvin" element={<PoxancumnerHashvin />} />
+            <Route path="/xnayoxutyuner" element={<Xnayoxutyuner />} />
+            <Route path="/tvayin" element={<Tvayin />} />
+            <Route path="/business" element={<Business />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }

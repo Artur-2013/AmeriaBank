@@ -1,0 +1,373 @@
+/* ---------- 1. Հերոս ---------- */
+.ph-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 425px;
+  padding: 0 120px 0 70px;
+  background: #f0f4fa;
+  overflow: hidden;
+}
+
+.ph-text h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-text p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.ph-image {
+  height: 425px;
+  object-fit: contain;
+  align-self: flex-end;
+  margin-right: 120px;
+}
+
+.ph-side-tab {
+  position: absolute;
+  left: 0;
+  top: 85px;
+  width: 36px;
+  height: 210px;
+  background: #f97f1f;
+  color: #fff;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ph-chat {
+  position: fixed;
+  right: 40px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 10;
+}
+
+.ph-chat-bubble {
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ph-chat-btn {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  background: #6cc24a;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ---------- 2. Տեքստ + մենյու ---------- */
+.ph-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px 70px 60px 70px;
+  background: #fff;
+}
+
+.ph-main {
+  flex: 1;
+  max-width: 800px;
+}
+
+.ph-main h2 {
+  margin: 0 0 30px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-main p {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.ph-main a {
+  color: #6cc24a;
+  text-decoration: none;
+}
+
+.ph-sidebar {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px;
+  background: #f6f7f8;
+}
+
+.ph-sidebar a {
+  color: #111;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.ph-sidebar a.active,
+.ph-sidebar a:hover {
+  color: #6cc24a;
+}
+
+/* ---------- 3. Դեռ չունե՞ս հաշիվ ---------- */
+.ph-promo-wrap {
+  padding: 10px 70px 60px;
+  background: #fff;
+}
+
+.ph-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 325px;
+  padding: 0 80px 0 62px;
+  border: 1px solid #e3e6ea;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.ph-promo-text {
+  align-self: center;
+  max-width: 680px;
+}
+
+.ph-promo-text h2 {
+  margin: 0 0 14px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-promo-text p {
+  margin: 0 0 22px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.ph-promo-btn {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #6cc24a;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ph-promo-btn:hover {
+  background: #5aaf3a;
+}
+
+.ph-promo-img {
+  height: 325px;
+  object-fit: contain;
+  align-self: flex-end;
+  margin-right: 80px;
+}
+
+/* ---------- 4. Պայմաններ և սակագներ ---------- */
+.ph-terms {
+  padding: 40px 70px 60px;
+  background: #fff;
+}
+
+.ph-terms h2 {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: #111;
+}
+
+.ph-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid #ddd;
+  width: fit-content;
+}
+
+.ph-tab {
+  padding: 12px 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+}
+
+.ph-tab.active {
+  color: #6cc24a;
+  border-bottom-color: #6cc24a;
+}
+
+.ph-terms-text {
+  margin: 0 0 30px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.ph-terms-line {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* ---------- Աղյուսակ ---------- */
+.ph-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.ph-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #222;
+  text-align: left;
+}
+
+.ph-table th,
+.ph-table td {
+  padding: 12px 8px;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.ph-table-group th {
+  background: #f6f7f8;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ph-table-group th:first-child {
+  border-right: 1px solid #fff;
+}
+
+.ph-table-note {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.ph-table-head th {
+  font-weight: 600;
+}
+
+.ph-table tbody tr {
+  background: #f6f7f8;
+}
+/* ---------- Ծանոթագրություններ ---------- */
+.ph-notes {
+  margin-bottom: 30px;
+}
+
+.ph-notes p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+}
+/* ---------- 5. Քարտեր ---------- */
+.ph-cards {
+  display: flex;
+  gap: 22px;
+  padding: 30px 70px 40px;
+  background: #fff;
+}
+
+.ph-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 396px;
+  min-height: 315px;
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.ph-card-body {
+  padding: 28px 24px 20px;
+}
+
+.ph-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.ph-card-top h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.ph-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ph-card-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.ph-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px;
+  background: #e9f2fb;
+  color: #6cc24a;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ph-card-footer:hover {
+  background: #dcebf8;
+}
+
+.ph-card-arrow {
+  font-size: 18px;
+}
